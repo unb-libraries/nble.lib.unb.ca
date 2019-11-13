@@ -1,0 +1,106 @@
+{
+    "authors": [
+        {
+            "name": "UNB Libraries libsupport@unb.ca",
+            "role": "Creator"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "description": "Drupal 8 component of nble.lib.unb.ca",
+    "extra": {
+        "enable-patching": true,
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ]
+        },
+        "patches": {
+            "drupal/bootstrap_barrio": {
+                "Fix CSS library 404": "https://www.drupal.org/files/issues/2019-02-19/3033946-6.patch",
+                "Fix Layout Builder": "https://www.drupal.org/files/issues/2018-06-01/2976934-3.patch"
+            }
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "name": "unb-libraries/nble.lib.unb.ca",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/bootstrap4": "1.0-rc1",
+        "drupal/conditional_fields": "1.0-alpha6",
+        "drupal/config_update": "1.5",
+        "drupal/core": "8.7.9",
+        "drupal/entity_reference_revisions": "1.7",
+        "drupal/externalauth": "1.2",
+        "drupal/features": "3.7",
+        "drupal/field_formatter_class": "1.1",
+        "drupal/field_group": "3.0-rc1",
+        "drupal/fixed_block_content": "1.0",
+        "drupal/fontawesome": "2.14",
+        "drupal/google_analytics": "2.2",
+        "drupal/health_check": "1.2",
+        "drupal/key": "1.10",
+        "drupal/ldap": "3.0-beta7",
+        "drupal/optional_end_date": "1.0-beta1",
+        "drupal/paragraphs": "1.10",
+        "drupal/pathauto": "1.5",
+        "drupal/redis": "1.2",
+        "drupal/require_login": "2.1",
+        "drupal/restui": "1.17",
+        "drupal/search_api": "1.14",
+        "drupal/token": "1.5",
+        "unb-libraries/drupal-builder": "^8.0.0"
+    },
+    "require-dev": {
+        "unb-libraries/drupal-development-libraries": "8.0.6"
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ]
+    },
+    "type": "project"
+}
