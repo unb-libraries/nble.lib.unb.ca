@@ -36,7 +36,7 @@ services:
     networks:
       - nble.lib.unb.ca
     ports:
-      - "3096:80"
+      - "3104:80"
     env_file:
       - ./env/drupal.env
     volumes:
