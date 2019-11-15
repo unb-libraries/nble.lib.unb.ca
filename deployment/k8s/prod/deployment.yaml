@@ -108,7 +108,3 @@ spec:
           name: drupal-persistent-storage
           persistentVolumeClaim:
             claimName: nble-lib-unb-ca
-        -
-          name: exportfiles-persistent-storage
-          persistentVolumeClaim:
-            claimName: exportfiles-nble-lib-unb-ca
