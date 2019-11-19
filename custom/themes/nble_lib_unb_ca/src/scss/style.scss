@@ -9,8 +9,104 @@ body {
   font-weight: normal;
 }
 
-// Path to default bootstrap4 theme sass.
-@import '../../../../../vendor/drupal/bootstrap4/scss/theme';
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  color: $heading-fg-color;
+  font-weight: bold;
+  line-height: 1.15;
+}
+h1, .h1 {
+  font-size: 1.95rem;
+}
+h2, .h2 {
+  font-size: 1.5rem;
+}
+h3, .h3 {
+  font-size: 1.15rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+}
 
-// Include custom sub theme.
-@import 'custom/variables';
+header {
+  .navbar {
+    background-image: linear-gradient(to bottom, #b56327, #ba6b2b, #c07430, #c57c35, #ca853a, #ca853a, #ca853a, #ca853a, #c57c35, #c07430, #ba6b2b, #b56327);
+    border-bottom: 3px ridge $navbar;
+    border-top: 3px ridge $navbar;
+
+    a {
+      color: $black;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .navbar-nav {
+      a.nav-link {
+        transition: all .3s ease;
+
+        &:focus,
+        &:hover {
+          background: none;
+          color: $white;
+          text-shadow: 0 0 4px #a9a9a9;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .nav-link {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  p {
+    a {
+      &:link {
+        background: $link-bg;
+        border-bottom: 1px solid $link-fg-color;
+        color: $link-fg-color;
+        transition: all .3s ease;
+      }
+      &:focus,
+      &:hover,
+      &:active {
+        background: $link-hover-bg;
+        border-bottom: 1px solid $link-hover-fg-color;
+        color: $link-hover-fg-color;
+      }
+    }
+  }
+
+  .page-content-wrapper {
+    background: $bg-main;
+  }
+
+  .page-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-first-wrapper {
+    background: #f4c99c url(../../images/bg-sidebar.jpg) repeat-y;
+    background-size: 100% auto;
+
+    @media (max-width: 575px) {
+      .abc-overlay {
+        display: none;
+      }
+    }
+  }
+}
+
+footer {
+  margin-bottom: 2rem;
+
+  .container {
+    background-image: linear-gradient(to bottom, #b56327, #ba6b2b, #c07430, #c57c35, #ca853a, #ca853a, #ca853a, #ca853a, #c57c35, #c07430, #ba6b2b, #b56327);
+  }
+}
