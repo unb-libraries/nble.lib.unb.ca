@@ -1,0 +1,25 @@
+uuid: 5ae47a00-d8fa-44e2-ada6-275380a9f7d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:67a41e95-6830-4403-9d84-16fbedea2856'
+  module:
+    - block_content
+  theme:
+    - nble_lib_unb_ca
+id: footercopyright
+theme: nble_lib_unb_ca
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:67a41e95-6830-4403-9d84-16fbedea2856'
+settings:
+  id: 'block_content:67a41e95-6830-4403-9d84-16fbedea2856'
+  label: 'Footer: Copyright'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

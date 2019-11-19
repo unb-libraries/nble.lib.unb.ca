@@ -1,0 +1,18 @@
+uuid: 96d1fdd8-0ebc-445f-9768-e83d66303af2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nble_lib_unb_ca
+id: primaryadminactions
+theme: nble_lib_unb_ca
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

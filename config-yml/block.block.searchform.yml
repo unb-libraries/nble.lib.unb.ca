@@ -1,0 +1,20 @@
+uuid: ccaea8c3-2267-49bf-90a3-d5f639c4d6e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - nble_lib_unb_ca
+id: searchform
+theme: nble_lib_unb_ca
+region: sidebar_first
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }

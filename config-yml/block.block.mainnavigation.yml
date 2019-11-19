@@ -1,18 +1,16 @@
-uuid: 7674c5fc-57d4-4eaf-894a-e8382f0f741b
+uuid: fb6733e5-fcb9-44b3-bc30-ccfa2ed5058c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
   module:
     - system
   theme:
-    - bootstrap4
-_core:
-  default_config_hash: tpjlFcyltVV5898goWN8SBwDBr99RH7ExLpOPZWBU5g
-id: bootstrap4_main_menu
-theme: bootstrap4
-region: header
+    - nble_lib_unb_ca
+id: mainnavigation
+theme: nble_lib_unb_ca
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
