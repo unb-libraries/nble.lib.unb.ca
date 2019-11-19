@@ -1,7 +1,13 @@
-@import 'overrides/variables';
+// Include custom sub theme.
+@import 'import';
 
-// Path to default bootstrap4 sass.
-@import '../../../../../vendor/drupal/bootstrap4/dist/bootstrap/4.3.1/scss/bootstrap';
+body {
+  background: $bg-page;
+  color: $black;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
 
 // Path to default bootstrap4 theme sass.
 @import '../../../../../vendor/drupal/bootstrap4/scss/theme';
