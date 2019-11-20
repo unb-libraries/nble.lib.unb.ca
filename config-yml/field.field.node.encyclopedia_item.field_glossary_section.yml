@@ -10,7 +10,7 @@ field_name: field_glossary_section
 entity_type: node
 bundle: encyclopedia_item
 label: 'Glossary Section'
-description: 'Enter the letter the <i>Encyclodpeda item</i> should be listed under in the glossary <em>(Defaults to 1st letter of the title)</em>.'
+description: "Enter the letter the <i>Encyclodpeda item</i> should be listed under in the glossary.<br>\r\n<em>Defaults to 1st letter of the title, ignoring the word 'The'."
 required: false
 translatable: false
 default_value: {  }

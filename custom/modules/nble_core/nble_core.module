@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains nble_core.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nble_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the nble_core module.
+    case 'help.page.nble_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides core functionality for the NBLE site.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nble_core_theme() {
+  return [
+    'nble_core' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_node_presave().
+ */
+function nble_core_node_presave($node) {
+  switch ($node->getType()) {
+    case 'encyclopedia_item':
+      if ($node->hasField('field_glossary_section') &&
+      empty($node->get('field_glossary_section')->getValue())) {
+          $title = $node
+            ->get('title')
+            ->getString();
+          // Don't use 't' for section for titles that begin with 'The'.
+          $title = str_ireplace('the', '', $title);
+          $section = substr(trim($title), 0, 1);
+          $node->set('field_glossary_section', strtoupper($section));
+      }
+      break;
+  }
+}
