@@ -31,26 +31,35 @@ h4, .h4 {
 }
 
 header {
+  & > .container {
+    border-top: 6px outset #b56327;
+  }
   .navbar {
     background-image: linear-gradient(to bottom, #b56327, #ba6b2b, #c07430, #c57c35, #ca853a, #ca853a, #ca853a, #ca853a, #c57c35, #c07430, #ba6b2b, #b56327);
     border-bottom: 3px ridge $navbar;
     border-top: 3px ridge $navbar;
 
     a {
-      color: $black;
       font-weight: bold;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
 
     .navbar-nav {
       a.nav-link {
-        transition: all .3s ease;
+        color: #323232;
+        color: rgba(0,0,0,0.7);
+        transition: all $transition-duration $transition-timing;
 
         &:focus,
         &:hover {
           background: none;
           color: $white;
           text-shadow: 0 0 4px #a9a9a9;
+        }
+
+        &.active {
+          text-shadow: 0 0 1px $black;
         }
       }
 
@@ -71,7 +80,7 @@ main {
         background: $link-bg;
         border-bottom: 1px solid $link-fg-color;
         color: $link-fg-color;
-        transition: all .3s ease;
+        transition: all $transition-duration $transition-timing;
       }
       &:focus,
       &:hover,
@@ -108,5 +117,6 @@ footer {
 
   .container {
     background-image: linear-gradient(to bottom, #b56327, #ba6b2b, #c07430, #c57c35, #ca853a, #ca853a, #ca853a, #ca853a, #c57c35, #c07430, #ba6b2b, #b56327);
+    border-top: 3px outset #cfa240;
   }
 }
