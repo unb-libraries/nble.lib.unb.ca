@@ -1,0 +1,19 @@
+uuid: 5af5b925-e58c-40a7-ad76-303bd7e30c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_glossary_section
+    - node.type.encyclopedia_item
+id: node.encyclopedia_item.field_glossary_section
+field_name: field_glossary_section
+entity_type: node
+bundle: encyclopedia_item
+label: 'Glossary Section'
+description: 'Enter the letter the <i>Encyclodpeda item</i> should be listed under in the glossary <em>(Defaults to 1st letter of the title)</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

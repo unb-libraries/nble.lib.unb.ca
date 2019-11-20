@@ -1,0 +1,30 @@
+uuid: c3b63677-af65-4361-880b-0956cafe44a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.encyclopedia_item.body
+    - node.type.encyclopedia_item
+  module:
+    - text
+    - user
+id: node.encyclopedia_item.teaser
+targetEntityType: node
+bundle: encyclopedia_item
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

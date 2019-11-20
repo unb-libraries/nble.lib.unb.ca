@@ -1,0 +1,70 @@
+uuid: 7554506c-f2e7-4e16-a2d7-8cdb7975350d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.encyclopedia_item.body
+    - field.field.node.encyclopedia_item.field_glossary_section
+    - field.field.node.encyclopedia_item.field_image
+    - image.style.thumbnail
+    - node.type.encyclopedia_item
+  module:
+    - image
+    - path
+    - text
+id: node.encyclopedia_item.default
+targetEntityType: node
+bundle: encyclopedia_item
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_glossary_section:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true
