@@ -26,6 +26,7 @@ settings:
             - Format
             - Bold
             - Italic
+            - Underline
         -
           name: Lists
           items:
