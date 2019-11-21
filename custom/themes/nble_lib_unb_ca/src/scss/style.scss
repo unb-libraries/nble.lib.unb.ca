@@ -1,6 +1,12 @@
 // Include custom sub theme.
 @import 'import';
 
+a {
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.12rem rgba(0, 123, 255, 0.5);
+  }
+}
 body {
   background: $bg-page;
   color: $black;
