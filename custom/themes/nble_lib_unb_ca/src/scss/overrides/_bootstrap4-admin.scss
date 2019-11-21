@@ -1,8 +1,28 @@
-.toolbar-tray a:hover {
-  color: $white;
+// Tabs block.
+#block-tabs {
+  margin-bottom: .5rem;
 
-  .toolbar .toolbar-icon:before {
-    color: $white;
+  .tabs a:focus,
+  .tabs a:hover {
+    color: #8b0000;
+  }
+}
+
+// Toolbar buttons.
+.toolbar-tab {
+  a {
+    &:focus,
+    &:hover {
+      background: #333;
+    }
+  }
+}
+.toolbar-tray {
+  a {
+    &:focus,
+    &:hover {
+      background: #eee;
+    }
   }
 }
 
@@ -27,5 +47,21 @@
 
   &:hover {
     box-shadow: 0 0 2px $black;
+  }
+}
+
+// Vertical tabs.
+.vertical-tabs__menu {
+  .is-selected a {
+    background: $bg-main;
+  }
+
+  a {
+    background: #eae5d8;
+    color: #003399;
+
+    &:hover {
+      background: #fffaef;
+    }
   }
 }
