@@ -27,4 +27,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_glossary_section: true
+  field_image: true

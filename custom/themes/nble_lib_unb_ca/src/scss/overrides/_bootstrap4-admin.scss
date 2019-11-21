@@ -5,3 +5,27 @@
     color: $white;
   }
 }
+
+// Fix bootstrap + jquery.ui close button.
+.ui-dialog .ui-dialog-titlebar-close {
+  background: #e6e6e6;
+  border: 1px solid #949494;
+  border-radius: .25rem;
+  height: 22px;
+  width: 22px;
+
+  &:after {
+    background-image: url(/core/assets/vendor/jquery.ui/themes/base/images/ui-icons_777777_256x240.png);
+    background-position: -94px -126px;
+    background-repeat: no-repeat;
+    content: '';
+    height: 20px;
+    display: inline-block;
+    margin: -2px;
+    width: 20px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px $black;
+  }
+}
