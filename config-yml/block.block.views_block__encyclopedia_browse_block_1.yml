@@ -1,0 +1,25 @@
+uuid: 924d5c80-2b2a-4df9-aa0e-f3a707f06d1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.encyclopedia_browse
+  module:
+    - views
+  theme:
+    - nble_lib_unb_ca
+id: views_block__encyclopedia_browse_block_1
+theme: nble_lib_unb_ca
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:encyclopedia_browse-block_1'
+settings:
+  id: 'views_block:encyclopedia_browse-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }
