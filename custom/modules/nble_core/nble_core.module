@@ -38,17 +38,22 @@ function nble_core_theme() {
  * Implements hook_node_presave().
  */
 function nble_core_node_presave($node) {
+  $input_title = $node
+    ->get('title')
+    ->getString();
+  $title = $input_title ? trim($input_title) : 'Undefined!';
+  if ($title != $input_title) {
+    $node->setTitle($title);
+  }
+
   switch ($node->getType()) {
     case 'encyclopedia_item':
       if ($node->hasField('field_glossary_section') &&
       empty($node->get('field_glossary_section')->getValue())) {
-          $title = $node
-            ->get('title')
-            ->getString();
-          // Don't use 't' for section for titles that begin with 'The'.
-          $title = str_ireplace('the', '', $title);
-          $section = substr(trim($title), 0, 1);
-          $node->set('field_glossary_section', strtoupper($section));
+        // Don't use 't' for section for titles that begin with 'The'.
+        $title = str_ireplace('the', '', $title);
+        $section = substr(trim($title), 0, 1);
+        $node->set('field_glossary_section', strtoupper($section));
       }
       break;
   }
