@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.encyclopedia_item.field_image
     - node.type.encyclopedia_item
   module:
-    - image
     - text
     - user
 id: node.encyclopedia_item.default
@@ -23,19 +22,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image:
-    weight: 1
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   links:
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_glossary_section: true
+  field_image: true
