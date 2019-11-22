@@ -7,6 +7,7 @@ a {
     box-shadow: 0 0 0 0.12rem rgba(0, 123, 255, 0.5);
   }
 }
+
 body {
   background: $bg-page;
   color: $black;
@@ -27,7 +28,7 @@ h1, .h1 {
   font-size: 1.95rem;
 }
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 h3, .h3 {
   font-size: 1.15rem;
@@ -89,14 +90,13 @@ header {
 }
 
 main {
-  p {
-    a {
-      &:link {
+  .block-system-main-block {
+    a:not([role="button"]) {
         background: $link-bg;
         border-bottom: 1px solid $link-fg-color;
         color: $link-fg-color;
         transition: all $transition-duration $transition-timing;
-      }
+
       &:focus,
       &:hover,
       &:active {
