@@ -1,0 +1,48 @@
+// Glossary block.
+.glossary-alpha {
+  background: $glossary-bg-color;
+  background: rgba(78, 59, 34, .89);
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: .86rem;
+    margin-bottom: 1rem;
+  }
+
+  .views-summary-unformatted {
+    text-align: center;
+
+    a {
+      border-radius: .25rem;
+      color: $glossary-link-fg-color;
+      display: inline-block;
+      font-weight: bold;
+      min-width: 2rem;
+      padding: .2rem .5rem;
+      transition: all $transition-duration $transition-timing;
+
+      &:focus,
+      &:hover {
+        background: #715213;
+        box-shadow: 0 0 2px $glossary-link-fg-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Glossary page.
+.glossary-listing {
+  // Alpha background image height.
+  min-height: 130px;
+}
+
+// Glossary page background images.
+$letters: a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+@each $letter in $letters {
+  .alpha-bg-#{$letter} {
+    background: url(../../images/letter-#{$letter}.gif) right top no-repeat;
+  }
+}
