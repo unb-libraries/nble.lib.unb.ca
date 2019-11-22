@@ -1,9 +1,9 @@
-uuid: 5ae47a00-d8fa-44e2-ada6-275380a9f7d6
+uuid: ad96570c-0a0d-4201-ae38-70ac29aa8da6
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:67a41e95-6830-4403-9d84-16fbedea2856'
+    - 'block_content:basic_block:e74752a2-06ba-4521-b4cd-0d73204dd237'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: nble_lib_unb_ca
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:67a41e95-6830-4403-9d84-16fbedea2856'
+plugin: 'block_content:e74752a2-06ba-4521-b4cd-0d73204dd237'
 settings:
-  id: 'block_content:67a41e95-6830-4403-9d84-16fbedea2856'
+  id: 'block_content:e74752a2-06ba-4521-b4cd-0d73204dd237'
   label: 'Footer: Copyright'
   provider: block_content
   label_display: '0'
