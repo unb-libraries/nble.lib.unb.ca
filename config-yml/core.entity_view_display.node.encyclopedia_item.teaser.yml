@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.encyclopedia_item.body
+    - field.field.node.encyclopedia_item.field_glossary_section
+    - field.field.node.encyclopedia_item.field_image
     - node.type.encyclopedia_item
   module:
     - text
@@ -30,3 +32,5 @@ content:
 hidden:
   field_glossary_section: true
   field_image: true
+  langcode: true
+  search_api_excerpt: true
