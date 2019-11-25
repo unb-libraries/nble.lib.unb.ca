@@ -1,15 +1,75 @@
-form {
-  .btn-primary {
-    background: $glossary-bg-color;
-    border: 1px solid #7b7469;
-    border-radius: .25rem;
-    color: $glossary-link-fg-color;
+// Emulate BS4 input-group + input-group-append on core .
+div[data-drupal-selector="views-exposed-form-search-encyclopedia-page-1"] {
+  display: table;
 
-    &.btn-primary:focus,
-    &.btn-primary:hover {
-      background: #715213;
-      border-color: #846936;
-      color: $white;
+  form {
+    display: table-row;
+
+    & > div.form--inline > div {
+      display: grid;
+      margin-bottom: .25rem;
+
+      @media (min-width: 992px) {
+        display: table-cell;
+
+        .form-search,
+        input[name="query"] {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        .form-submit {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
     }
+
+    .form--inline {
+      display: table-row;
+
+      .form-actions {
+        margin-top: 0;
+      }
+
+      .form-item {
+        float: none;
+        margin-right: 0;
+      }
+
+      .form-item-query {
+        vertical-align: middle;
+      }
+    }
+    // Apply glossary-like theming to search button.
+    .btn-primary {
+      background: $glossary-bg-color;
+      border: 1px solid #7b7469;
+      border-radius: .25rem;
+      color: $glossary-link-fg-color;
+
+      &:focus,
+      &:hover {
+        background: #715213;
+        border-color: #846936;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Apply glossary-like theming to pager buttons.
+main .block-system-main-block .pager__item a:not([role="button"]) {
+  background: $glossary-bg-color;
+  border: 1px solid #7b7469;
+  border-radius: .25rem;
+  color: $glossary-link-fg-color;
+  padding: .5rem;
+
+  &:focus,
+  &:hover {
+    background: #715213;
+    border-color: #846936;
+    color: $white;
   }
 }
