@@ -188,7 +188,20 @@ display:
           field: area_text_custom
           plugin_id: text_custom
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<div class="text-white">Sorry, no content was found.</div>'
+            format: full_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -304,7 +317,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<h2 class="h4">Found @total item(s)</h2>'
+          content: '<h2 class="h4">Found @total items</h2>'
           plugin_id: result
       defaults:
         header: false
