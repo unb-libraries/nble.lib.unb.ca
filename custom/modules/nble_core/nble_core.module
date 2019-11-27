@@ -38,6 +38,7 @@ function nble_core_theme() {
  * Implements hook_node_presave().
  */
 function nble_core_node_presave($node) {
+  // Trim leading/trailing whitespace from title input.
   $input_title = $node
     ->get('title')
     ->getString();
@@ -48,6 +49,7 @@ function nble_core_node_presave($node) {
 
   switch ($node->getType()) {
     case 'encyclopedia_item':
+      // Set listing title and section field defaults, if applicable.
       if ($node->hasField('field_listing_title')) {
         $listing_title = trim($node->get('field_listing_title')->getString());
         $listing_title = (empty($listing_title)) ? $input_title : $listing_title;
@@ -74,8 +76,8 @@ function nble_core_node_presave($node) {
         empty($node->get('field_glossary_section')->getValue())) {
         // Don't use 't' for section for titles that begin with 'The'.
         $title = str_ireplace('the', '', $listing_title);
-        $glossary = substr(trim($title), 0, 1);
-        $node->set('field_glossary_section', strtoupper($glossary[0]));
+        $listing_section = substr(trim($title), 0, 1);
+        $node->set('field_glossary_section', strtoupper($listing_section[0]));
       }
       break;
   }
