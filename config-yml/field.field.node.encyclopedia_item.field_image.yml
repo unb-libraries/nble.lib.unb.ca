@@ -11,7 +11,7 @@ id: node.encyclopedia_item.field_image
 field_name: field_image
 entity_type: node
 bundle: encyclopedia_item
-label: Image
+label: 'Image File'
 description: ''
 required: false
 translatable: false
@@ -23,7 +23,7 @@ settings:
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
   alt_field_required: false
   title_field: false
   title_field_required: false
