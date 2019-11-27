@@ -90,7 +90,8 @@ header {
 }
 
 main {
-  .block-system-main-block article {
+  .block-system-main-block article,
+  .block-system-main-block .view {
     a:not([role="button"]) {
         background: $link-bg;
         border-bottom: 1px solid $link-fg-color;
