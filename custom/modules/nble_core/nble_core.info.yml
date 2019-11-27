@@ -3,3 +3,7 @@ type: module
 description: 'Provides core functionality for the NBLE site.'
 core: 8.x
 package: 'UNB Libraries'
+dependencies:
+  - field_group
+  - twig_field_value
+  - twig_tweak
