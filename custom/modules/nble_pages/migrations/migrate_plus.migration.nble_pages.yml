@@ -1,0 +1,161 @@
+id: nble_pages
+label: Pages of New Brunswick Literary Encyclopedia
+migration_group: UNBLIB
+migration_tags:
+  - html
+
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: dom
+
+  urls:
+    - 'http://stu-sites.ca/nble/a.html'
+    - 'http://stu-sites.ca/nble/b.html'
+    - 'http://stu-sites.ca/nble/c.html'
+    - 'http://stu-sites.ca/nble/d.html'
+    - 'http://stu-sites.ca/nble/e.html'
+    - 'http://stu-sites.ca/nble/f.html'
+    - 'http://stu-sites.ca/nble/g.html'
+    - 'http://stu-sites.ca/nble/h.html'
+    - 'http://stu-sites.ca/nble/i.html'
+    - 'http://stu-sites.ca/nble/j.html'
+    - 'http://stu-sites.ca/nble/k.html'
+    - 'http://stu-sites.ca/nble/l.html'
+    - 'http://stu-sites.ca/nble/m.html'
+    - 'http://stu-sites.ca/nble/n.html'
+    - 'http://stu-sites.ca/nble/o.html'
+    - 'http://stu-sites.ca/nble/p.html'
+    - 'http://stu-sites.ca/nble/q.html'
+    - 'http://stu-sites.ca/nble/r.html'
+    - 'http://stu-sites.ca/nble/s.html'
+    - 'http://stu-sites.ca/nble/t.html'
+    - 'http://stu-sites.ca/nble/u.html'
+    - 'http://stu-sites.ca/nble/v.html'
+    - 'http://stu-sites.ca/nble/w.html'
+    - 'http://stu-sites.ca/nble/y.html'
+
+  ids:
+    url:
+      type: string
+  item_selector: url
+
+  dom_config:
+    migration_tools:
+      -
+        source_operations:
+          -
+            operation: modifier
+            modifier: basicCleanup
+        fields:
+          url:
+            obtainer: ObtainLinkFile
+            jobs:
+              -
+                job: addSearch
+                method: findFileLinksHref
+                arguments:
+                  - '#content'
+                  - []
+                  - []
+        dom_operations:
+          -
+            operation: modifier
+            modifier: convertLinksAbsoluteSimple
+            arguments:
+              - 'http://stu-sites.ca/nble/'
+          -
+            operation: get_field
+            field: url
+
+  migration_tools:
+    -
+      source: url
+      source_type: url
+      source_operations:
+        -
+          operation: modifier
+          modifier: basicCleanup
+      fields:
+        title:
+          obtainer: ObtainTitle
+          jobs:
+            -
+              job: addSearch
+              method: pluckSelector
+              arguments:
+                - '#content h1'
+        body:
+          obtainer: ObtainBody
+          jobs:
+            -
+              job: addSearch
+              method: pluckSelector
+              arguments:
+                - '#content'
+                - 1
+                - innerHtml
+        page_image_caption:
+          obtainer: ObtainHTML
+          jobs:
+            -
+              job: addSearch
+              method: findSelector
+              arguments:
+                - '#img_right p'
+                - 1
+                - innerHtml
+
+      dom_operations:
+        -
+          operation: get_field
+          field: title
+        -
+          operation: get_field
+          field: body
+        -
+          operation: get_field
+          field: page_image_caption
+
+process:
+  type:
+    plugin: default_value
+    default_value: encyclopedia_item
+  title:
+    plugin: default_value
+    default_value: NBLE Item
+    source: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: "full_html"
+  field_glossary_section:
+      -
+        plugin: explode
+        source: url
+        delimiter: /
+      -
+        plugin: array_doublepop
+      -
+        plugin: substr
+        length: 1
+  field_image/target_id:
+    -
+      plugin: migration_lookup
+      migration: nble_images
+      source: url
+  field_image_caption/value: page_image_caption
+  field_image_caption/format:
+    plugin: default_value
+    default_value: "restricted_html"
+  field_old_url: url
+
+destination:
+  plugin: entity:node
+
+dependencies:
+  module:
+    - nble_pages
+  enforced:
+    module:
+      - nble_pages
