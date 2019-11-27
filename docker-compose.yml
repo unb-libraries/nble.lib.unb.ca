@@ -12,7 +12,7 @@ services:
     networks:
       - nble.lib.unb.ca
 
-  drupal-solr-nble-lib-unb-ca:
+  drupal-solr-lib-unb-ca:
     image: unblibraries/solr-drupal:8.x-3.x
     expose:
       - "8983"
