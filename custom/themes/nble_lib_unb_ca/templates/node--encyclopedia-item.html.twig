@@ -96,7 +96,8 @@
         {% set image_src = content.field_image['#items'].entity.uri.value | image_style('encyclopedia_image') %}
         <div class="col-4 float-right row">
             <figure class="border figure p-2 text-center">
-                <img src="{{ image_src }}" class="figure-img img-fluid" alt="{{ content.field_image_caption|field_value }}">
+                <img src="{{ image_src }}" class="figure-img img-fluid"
+                     alt="{{ content.field_image_caption|render|striptags|trim }}">
                 <figcaption class="figure-caption">
                     {{ content.field_image_caption|field_value }}
                 </figcaption>
