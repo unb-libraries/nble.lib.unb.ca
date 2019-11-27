@@ -90,7 +90,7 @@ header {
 }
 
 main {
-  .block-system-main-block {
+  .block-system-main-block article {
     a:not([role="button"]) {
         background: $link-bg;
         border-bottom: 1px solid $link-fg-color;
