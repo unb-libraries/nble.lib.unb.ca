@@ -48,12 +48,34 @@ function nble_core_node_presave($node) {
 
   switch ($node->getType()) {
     case 'encyclopedia_item':
+      if ($node->hasField('field_listing_title')) {
+        $listing_title = trim($node->get('field_listing_title')->getString());
+        $listing_title = (empty($listing_title)) ? $input_title : $listing_title;
+      }
+      else {
+        $listing_title = NULL;
+      }
+
+      if (empty($node->get('field_listing_title')->getValue())) {
+        $names = explode(' ', $listing_title);
+        if ($names[0] === 'The') {
+          $first_names = ', ' . array_shift($names);
+          $last_name = (!empty($names)) ? implode(' ', $names) : NULL;
+        }
+        else {
+          $last_name = array_pop($names);
+          $first_names = (!empty($names)) ? ', ' . implode(' ', $names) : NULL;
+        }
+        $listing_title = $last_name . $first_names;
+        $node->set('field_listing_title', $listing_title);
+      }
+
       if ($node->hasField('field_glossary_section') &&
-      empty($node->get('field_glossary_section')->getValue())) {
+        empty($node->get('field_glossary_section')->getValue())) {
         // Don't use 't' for section for titles that begin with 'The'.
-        $title = str_ireplace('the', '', $title);
-        $section = substr(trim($title), 0, 1);
-        $node->set('field_glossary_section', strtoupper($section));
+        $title = str_ireplace('the', '', $listing_title);
+        $glossary = substr(trim($title), 0, 1);
+        $node->set('field_glossary_section', strtoupper($glossary[0]));
       }
       break;
   }

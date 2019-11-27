@@ -6,12 +6,31 @@ dependencies:
     - field.field.node.encyclopedia_item.body
     - field.field.node.encyclopedia_item.field_glossary_section
     - field.field.node.encyclopedia_item.field_image
+    - field.field.node.encyclopedia_item.field_listing_title
     - image.style.thumbnail
     - node.type.encyclopedia_item
   module:
+    - field_group
     - image
     - path
     - text
+third_party_settings:
+  field_group:
+    group_listing_override:
+      children:
+        - field_listing_title
+        - field_glossary_section
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Listing Overrides'
+      region: content
 id: node.encyclopedia_item.default
 targetEntityType: node
 bundle: encyclopedia_item
@@ -19,7 +38,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -35,23 +54,31 @@ content:
     type: string_textfield
     region: content
   field_image:
-    weight: 2
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
+  field_listing_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -59,7 +86,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 8
     region: content
     third_party_settings: {  }
   title:

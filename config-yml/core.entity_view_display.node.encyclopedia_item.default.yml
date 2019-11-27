@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.encyclopedia_item.body
     - field.field.node.encyclopedia_item.field_glossary_section
     - field.field.node.encyclopedia_item.field_image
+    - field.field.node.encyclopedia_item.field_listing_title
     - node.type.encyclopedia_item
   module:
     - text
@@ -30,5 +31,6 @@ content:
 hidden:
   field_glossary_section: true
   field_image: true
+  field_listing_title: true
   langcode: true
   search_api_excerpt: true
