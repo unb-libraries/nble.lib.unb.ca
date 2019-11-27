@@ -75,7 +75,7 @@ function nble_core_node_presave($node) {
       if ($node->hasField('field_glossary_section') &&
         empty($node->get('field_glossary_section')->getValue())) {
         // Don't use 't' for section for titles that begin with 'The'.
-        $title = str_ireplace('the', '', $listing_title);
+        $title = str_ireplace('the ', '', $listing_title);
         $listing_section = substr(trim($title), 0, 1);
         $node->set('field_glossary_section', strtoupper($listing_section[0]));
       }
