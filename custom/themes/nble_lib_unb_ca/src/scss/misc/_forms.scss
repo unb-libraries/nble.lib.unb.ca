@@ -1,9 +1,8 @@
 // Emulate BS4 input-group + input-group-append on core .
 div[data-drupal-selector="views-exposed-form-search-encyclopedia-page-1"] {
-  display: table;
-
   form {
-    display: table-row;
+    display: table;
+    width: 100%;
 
     & > div.form--inline > div {
       display: grid;
