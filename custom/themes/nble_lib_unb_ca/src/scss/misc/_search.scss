@@ -1,5 +1,5 @@
 // Apply glossary-like theming to Views pager buttons.
-main .block-system-main-block .pager__item a:not([role="button"]) {
+main .block-system-main-block .view .pager__item a:not([role="button"]) {
   background: $glossary-bg-color;
   border: 1px solid #7b7469;
   border-radius: .25rem;
