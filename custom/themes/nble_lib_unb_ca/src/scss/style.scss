@@ -106,6 +106,15 @@ main {
         color: $link-hover-fg-color;
       }
     }
+
+    .contextual-links {
+      a,
+      a:hover {
+        background: inherit;
+        border: none;
+        color: inherit;
+      }
+    }
   }
 
   .page-content-wrapper {
