@@ -182,7 +182,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: p
-          element_class: text-dark
+          element_class: search-excerpt
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
