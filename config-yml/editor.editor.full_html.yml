@@ -40,15 +40,15 @@ settings:
         -
           name: Format
           items:
-            - Blockquote
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
+            - Blockquote
         -
           name: Media
           items:
-            - HorizontalRule
             - Table
+            - HorizontalRule
             - DrupalFile
         -
           name: Tools
