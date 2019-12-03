@@ -1,5 +1,5 @@
 uuid: f6af2f7e-d7a2-4dd7-a17b-e9c7a4ca4124
-name: 'Drush Site-Install'
+name: 'New Brunswick Literacy Encyclopedia'
 mail: admin@example.com
 slogan: ''
 page:
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''
