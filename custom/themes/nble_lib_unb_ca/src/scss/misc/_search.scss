@@ -1,15 +1,14 @@
 // Apply glossary-like theming to Views pager buttons.
 main .block-system-main-block .view .pager__item a:not([role="button"]) {
-  background: $glossary-bg-color;
-  border: 1px solid #7b7469;
-  border-radius: .25rem;
-  color: $glossary-link-fg-color;
-  padding: .5rem;
+  background: $dark-red;
+  border: 1px solid $widget-border-color;
+  border-radius: .33rem;
+  color: $white;
+  padding: .4rem .65rem;
 
   &:focus,
   &:hover {
-    background: #715213;
-    border-color: #846936;
+    background: $link-fg-color;
     color: $white;
   }
 }

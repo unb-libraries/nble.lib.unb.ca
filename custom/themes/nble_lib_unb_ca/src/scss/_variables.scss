@@ -1,26 +1,31 @@
+// Borders.
+$widget-border-color: #7b7469;
+
 // Colors.
 $black: #454545;
+$dark-red: #881414;
 $white: #fff;
 
-// Define new variables.
-$bg-main: #fbf7ec;
-$bg-page: #48433e;
+// Glossary.
+$glossary-bg-color: #4a351a;
+$glossary-link-fg-color: #eec64f;
+
+// Headings.
+$heading-fg-color: #542f12;/*#881414;*/
 
 // Links.
 $link-bg: none;
 $link-hover-bg: none;
-$link-fg-color: #be0303;
-$link-hover-fg-color: #f28b00;
-
-// Headings.
-$heading-fg-color: #881414;
-
-// Glossary.
-$glossary-bg-color: #4a351a;
-$glossary-link-fg-color: #EEC64F;
+$link-fg-color: #7e461b;/*#be0303*/
+$link-hover-fg-color: #8f0c0c;/*#f28b00;*/
+$link-hover-shadow-color: #f37373;
 
 // Navbar.
 $navbar: #d7d4cd;
+
+// Theme region.
+$bg-main: #fbf7ec;
+$bg-page: #48433e;
 
 // Transition.
 $transition-duration: 0.3s;

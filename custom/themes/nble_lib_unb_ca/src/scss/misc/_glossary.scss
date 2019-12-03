@@ -2,6 +2,8 @@
 .glossary-alpha {
   background: $glossary-bg-color;
   background: rgba(78, 59, 34, .89);
+  border: 1px solid $widget-border-color;
+  border-radius: .25rem;
   margin-top: 2rem;
   padding: 1rem;
   text-align: center;
@@ -39,10 +41,17 @@
   min-height: 130px;
 }
 
+.view-header {
+  .h4 {
+    border-bottom: 2px inset $dark-red;
+    color: $dark-red;
+  }
+}
+
 // Glossary page background images.
 $letters: a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
 @each $letter in $letters {
   .alpha-bg-#{$letter} {
-    background: url(../../images/letter-#{$letter}.gif) right top no-repeat;
+    background: url(../../images/letter-#{$letter}.gif) right 1em no-repeat;
   }
 }
