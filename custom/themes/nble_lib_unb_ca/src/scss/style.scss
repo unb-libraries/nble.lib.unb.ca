@@ -143,8 +143,16 @@ footer {
   margin-bottom: $margin-length;
 
   a {
+    border: 1px solid transparent;
     color: $white;
     transition: all $transition-duration $transition-timing;
+
+    &:focus,
+    &:hover {
+      background: none;
+      border-bottom: 1px solid $white;
+      color: $white;
+    }
   }
 
   .container {
