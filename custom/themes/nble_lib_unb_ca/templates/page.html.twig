@@ -42,15 +42,18 @@
  * @see html.html.twig
  */
 #}
+{% set sidebar_first_classes = 'col-sm-3 sidebar-first-wrapper px-1 py-4' %}
+{% set content_classes = page.sidebar_first ? 'col-sm-9 page-content-wrapper p-4' : 'col-sm-12 page-content-wrapper p-4' %}
+
 <header>
     <div class="container px-0">
         {{ page.header }}
     </div>
     <nav class="container navbar navbar-expand-lg navbar-{{ b4_navbar_schema }} bg-{{ b4_navbar_bg_schema }} p-1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="align-middle font-weight-bold text-black text-uppercase">Menu</span>
+        <button class="navbar-toggler"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
+            <span class="align-middle font-weight-bold text-black text-uppercase">{{ 'Menu'|t }}</span>
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -65,10 +68,8 @@
 </header>
 
 <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    {% set sidebar_first_classes = 'col-sm-3 sidebar-first-wrapper px-1 py-4' %}
-    {% set content_classes = page.sidebar_first ? 'col-sm-9 page-content-wrapper p-4' : 'col-sm-12 page-content-wrapper p-4' %}
+    {# Link target is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a>
 
     <div class="{{ b4_top_container }}">
         {% if page.breadcrumb %}
@@ -93,14 +94,16 @@
             {% endif %}
         </div>
     </div>
-
 </main>
 
 <footer>
     <div class="container">
         <div class="justify-content-center region region-footer pt-3 text-white">
             <div class="d-inline-flex">
-                <p class="mr-1">&copy; {{ 'now'|date('Y') }} <a href="https://www.stu.ca/english/tony-tremblay">Tony Tremblay</a>. All rights reserved.</p>
+                <p class="mr-1">
+                    &copy; {{ 'now'|date('Y') }}
+                    <a href="//www.stu.ca/english/tony-tremblay">Tony Tremblay</a>. {{ 'All rights reserved'|t }}.
+                </p>
             </div>
             {% if page.footer %}
                 {{ page.footer }}
