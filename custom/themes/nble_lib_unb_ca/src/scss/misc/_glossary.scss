@@ -21,15 +21,22 @@
       color: $glossary-link-fg-color;
       display: inline-block;
       font-weight: bold;
+      line-height: 100%;
+      margin: 2px 0;
       min-width: 2rem;
-      padding: .2rem .5rem;
+      padding: .5rem;
       transition: all $transition-duration $transition-timing;
 
       &:focus,
-      &:hover {
+      &:hover,
+      &.is-active {
         background: #715213;
         box-shadow: 0 0 2px $glossary-link-fg-color;
         color: $white;
+      }
+
+      &.is-active {
+        cursor: default;
       }
     }
   }
@@ -42,6 +49,10 @@
 }
 
 .view-header {
+  h2 {
+    text-shadow: none;
+  }
+
   .h4 {
     border-bottom: 2px solid $dark-red;
     color: $dark-red;

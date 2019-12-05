@@ -23,7 +23,7 @@ h4, .h4 {
   color: $heading-fg-color;
   font-weight: bold;
   line-height: 1.15;
-  text-shadow: 0 0 1px #c57c35;
+  text-shadow: 0 0 1px #baaba0;
 }
 h1, .h1 {
   font-size: 1.95rem;
@@ -96,6 +96,7 @@ main {
     a:not([role="button"]) {
         background: $link-bg;
         border-bottom: 1px dotted $link-fg-color;
+        box-shadow: none;
         color: $link-fg-color;
         transition: all $transition-duration $transition-timing;
 
@@ -103,9 +104,9 @@ main {
       &:hover,
       &:active {
         background: $link-hover-bg;
-        border-bottom: 1px solid $link-hover-fg-color;
+        border-color: transparent;/*1px solid $link-hover-fg-color;*/
         color: $link-hover-fg-color;
-        text-shadow: 0 0 1px $link-hover-shadow-color;
+        box-shadow: 0 1px 0 0 $link-hover-fg-color;
       }
     }
 
@@ -143,7 +144,7 @@ footer {
   margin-bottom: $margin-length;
 
   a {
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     color: $white;
     transition: all $transition-duration $transition-timing;
 
