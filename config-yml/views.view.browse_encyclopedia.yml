@@ -283,7 +283,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<h2 class="text-white">Browse the Encyclopedia by letter</h2>'
+          content: '<h2 class="text-white">Browse by letter</h2>'
           plugin_id: text_custom
       enabled: true
       pager:
