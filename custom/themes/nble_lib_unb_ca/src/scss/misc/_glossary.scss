@@ -63,6 +63,6 @@
 $letters: a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
 @each $letter in $letters {
   .alpha-bg-#{$letter} {
-    background: url(../../images/letter-#{$letter}.gif) right 1em no-repeat;
+    background: url(../../images/letter-#{$letter}.gif) right 1.5em no-repeat;
   }
 }
