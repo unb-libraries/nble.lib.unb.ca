@@ -62,7 +62,7 @@
         "drupal/allowed_formats": "1.2",
         "drupal/bootstrap4": "1.0-rc2",
         "drupal/config_update": "1.5",
-        "drupal/core": "8.7.10",
+        "drupal/core": "8.8.0",
         "drupal/editor_file": "1.4",
         "drupal/entity_reference_revisions": "1.7",
         "drupal/externalauth": "1.2",
