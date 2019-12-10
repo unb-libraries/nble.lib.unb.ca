@@ -9,6 +9,7 @@ main .block-system-main-block .view .pager__item a:not([role="button"]) {
   &:focus,
   &:hover {
     background: $link-fg-color;
+    box-shadow: none;
     color: $white;
   }
 }
