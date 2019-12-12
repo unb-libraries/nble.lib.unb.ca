@@ -98,12 +98,15 @@
 
 <footer>
     <div class="container">
-        <div class="justify-content-center region region-footer pt-3 text-white">
-            <div class="d-inline-flex">
-                <p class="mr-1">
-                    &copy; {{ 'now'|date('Y') }}
-                    <a href="//www.stu.ca/english/tony-tremblay">Tony Tremblay</a>. {{ 'All rights reserved'|t }}.
-                </p>
+        <div class="row align-items-center py-2 text-white">
+            <div class="col-12 text-center col-sm-6 text-sm-left">
+                <a class="d-inline-block" href="//lib.unb.ca" target="_blank">
+                    <img alt="UNB Libraries" class="unb-lib-logo" src="{{ directory }}/images/unb-libraries-white.png">
+                </a>
+            </div>
+            <div class="col-12 mt-3 text-center col-sm-6 mt-sm-0 text-sm-right">
+                <span>&copy; {{ 'now'|date('Y') }} <a href="//www.stu.ca/english/tony-tremblay" target="_blank">Tony Tremblay</a>.
+                    {{ 'All rights reserved'|t }}.</span>
             </div>
             {% if page.footer %}
                 {{ page.footer }}
