@@ -89,6 +89,10 @@ header {
         }
       }
     }
+
+    .navbar-toggler {
+      text-shadow: 0 0 1px $black;
+    }
   }
 }
 
