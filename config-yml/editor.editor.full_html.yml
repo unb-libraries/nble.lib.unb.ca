@@ -12,7 +12,7 @@ third_party_settings:
     status: true
     scheme: public
     directory: inline-files
-    extensions: txt
+    extensions: pdf
     max_size: ''
 format: full_html
 editor: ckeditor
