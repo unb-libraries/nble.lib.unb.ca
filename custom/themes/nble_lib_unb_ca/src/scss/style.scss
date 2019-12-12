@@ -11,7 +11,7 @@ a {
 body {
   background: $bg-page;
   color: $black;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
 }
@@ -21,6 +21,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
   color: $heading-fg-color;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
   font-weight: bold;
   line-height: 1.15;
   text-shadow: 0 0 1px #baaba0;
@@ -53,6 +54,7 @@ header {
     a {
       font-weight: bold;
       letter-spacing: 1px;
+      text-shadow: 0 0 1px $black;
       text-transform: uppercase;
     }
 
@@ -69,14 +71,14 @@ header {
         transition: all $transition-duration $transition-timing;
 
         &:focus,
-        &:hover {
+        &:hover,
+        &.active {
           background: none;
           color: $white;
-          text-shadow: 0 0 4px #a9a9a9;
+          text-shadow: 0 0 2px #a9a9a9;
         }
-
         &.active {
-          text-shadow: 0 0 2px $black;
+          cursor: default;
         }
       }
 
