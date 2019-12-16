@@ -60,6 +60,7 @@
     ],
     "require": {
         "drupal/allowed_formats": "1.2",
+        "drupal/back_to_top": "1.0",
         "drupal/bootstrap4": "1.0-rc2",
         "drupal/config_update": "1.5",
         "drupal/core": "8.8.0",
