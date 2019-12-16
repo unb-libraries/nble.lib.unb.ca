@@ -264,7 +264,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<h2 class="h4 mb-4">Showing @start - @end of @total results</h2>'
+          content: '<h2 class="h3 mb-4 result-summary">Showing @start - @end of @total results</h2>'
           plugin_id: result
       footer: {  }
       empty:
