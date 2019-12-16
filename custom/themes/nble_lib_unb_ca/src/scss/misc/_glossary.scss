@@ -48,14 +48,19 @@
   min-height: 130px;
 }
 
+.view-content {
+  .list-unstyled {
+    line-height: 1.8;
+  }
+}
+
 .view-header {
   h2 {
     text-shadow: none;
   }
 
-  .h4 {
-    border-bottom: 2px solid $dark-red;
-    color: $dark-red;
+  .result-summary {
+    border-bottom: 1px solid $heading-fg-color;
   }
 }
 

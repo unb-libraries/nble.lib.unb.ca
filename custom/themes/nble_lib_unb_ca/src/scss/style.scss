@@ -23,7 +23,7 @@ h4, .h4 {
   color: $heading-fg-color;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-weight: bold;
-  line-height: 1.15;
+  letter-spacing: 1px;
   text-shadow: 0 0 1px #baaba0;
 }
 h1, .h1 {
@@ -39,7 +39,11 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1rem;
 }
+ol, ul {
+  line-height: 1.6;
+}
 
+/* Template Regions */
 header {
   margin-top: $margin-length;
 

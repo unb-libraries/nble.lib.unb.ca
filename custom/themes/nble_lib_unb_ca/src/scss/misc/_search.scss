@@ -14,10 +14,16 @@ main .block-system-main-block .view .pager__item a:not([role="button"]) {
   }
 }
 
-.search-excerpt {
-  line-height: 1.35;
+.view-content {
+  .h3 {
+    margin-bottom: .75rem;
+  }
 
-  strong {
-    color: $glossary-bg-color;
+  .search-excerpt {
+    line-height: 1.4;
+
+    strong {
+      color: $glossary-bg-color;
+    }
   }
 }
