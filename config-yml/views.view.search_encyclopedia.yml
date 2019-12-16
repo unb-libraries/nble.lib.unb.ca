@@ -111,7 +111,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: div
-          element_class: h4
+          element_class: h3
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
