@@ -10,7 +10,7 @@ field_name: field_glossary_section
 entity_type: node
 bundle: encyclopedia_item
 label: 'Listing Section'
-description: "If left empty, automatically uses the 1st character of the <strong>Listing Title</strong> field.<br>\r\n<em>Change this only if you want the title displayed in a different <strong>Listing</strong> page</em>.\r\n"
+description: "If left empty, automatically uses the 1st character of the <strong>Listing Title</strong> field.<br>\r\n<em>Change this only if you want the title displayed on a different <strong>Listing</strong> page</em>.\r\n"
 required: false
 translatable: false
 default_value: {  }

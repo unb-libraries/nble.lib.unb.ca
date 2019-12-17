@@ -10,7 +10,7 @@ field_name: field_listing_title
 entity_type: node
 bundle: encyclopedia_item
 label: 'Listing Title'
-description: "If left empty, automatically saves <strong>Title</strong> field in <em>Last name, First name</em> format: <code>Adney, Edwin Tappan</code><br>\r\nTo override this (eg. for <em>organizations</em>) simply enter the desired format for the <strong>Listing</strong> page: <code>Ice Hound Gang</code>"
+description: "If left empty, automatically saves <strong>Title</strong> field in <em>Last name, First name</em> format: <code>Adney, Edwin Tappan</code><br>\r\nTo override this <em>(eg. for organizations)</em> enter the desired <strong>Listing</strong> page display format: <code>Ice Hound Gang</code>"
 required: false
 translatable: false
 default_value: {  }
