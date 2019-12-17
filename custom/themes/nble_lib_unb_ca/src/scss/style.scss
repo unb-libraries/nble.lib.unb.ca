@@ -2,6 +2,9 @@
 @import 'import';
 
 a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 0.12rem rgba(0, 123, 255, 0.5);
