@@ -9,6 +9,7 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access toolbar'
+  - 'administer nodes'
   - 'create basic_page content'
   - 'create encyclopedia_item content'
   - 'delete any basic_page content'
