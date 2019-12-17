@@ -56,3 +56,12 @@ div[data-drupal-selector="views-exposed-form-search-encyclopedia-page-1"] {
     }
   }
 }
+
+input[data-drupal-selector="edit-status-value"] {
+  margin-right: .25rem;
+  transform: scale(1.5);
+
+  & + label {
+    font-size: larger;
+  }
+}
