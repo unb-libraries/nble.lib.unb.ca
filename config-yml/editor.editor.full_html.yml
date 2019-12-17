@@ -24,9 +24,11 @@ settings:
           name: Formatting
           items:
             - Format
+            - Blockquote
             - Bold
             - Italic
             - Underline
+            - RemoveFormat
         -
           name: Lists
           items:
@@ -35,21 +37,21 @@ settings:
         -
           name: Links
           items:
+            - '-'
             - DrupalLink
             - DrupalUnlink
+            - DrupalFile
         -
           name: Format
           items:
             - JustifyLeft
             - JustifyCenter
             - JustifyRight
-            - Blockquote
         -
           name: Media
           items:
             - Table
             - HorizontalRule
-            - DrupalFile
         -
           name: Tools
           items:
