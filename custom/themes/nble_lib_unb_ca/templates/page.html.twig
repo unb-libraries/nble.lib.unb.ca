@@ -49,10 +49,10 @@
 %}
 
 <header>
-    <div class="container px-0">
+    <div class="container px-0" role="banner">
         {{ page.header }}
     </div>
-    <nav class="container navbar navbar-expand-lg navbar-{{ b4_navbar_schema }} bg-{{ b4_navbar_bg_schema }} p-1">
+    <nav class="container navbar navbar-expand-lg navbar-{{ b4_navbar_schema }} bg-{{ b4_navbar_bg_schema }} p-1" role="navigation">
         <button class="navbar-toggler"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
@@ -70,7 +70,7 @@
     </nav>
 </header>
 
-<main role="main">
+<main>
     {# Link target is in html.html.twig #}
     <a id="main-content" tabindex="-1"></a>
 
@@ -80,14 +80,14 @@
         {% endif %}
         <div class="row">
             {% if page.sidebar_first %}
-                <div class="{{ sidebar_first_classes }}">
+                <div class="{{ sidebar_first_classes }}" aria-label="{{ 'Search / Browse'|t }}" role="complementary">
                     {{ page.sidebar_first }}
                     <div class="abc-overlay my-4 text-center">
                         <img class="img-fluid" src="/themes/custom/nble_lib_unb_ca/images/abc-overlay.png" alt="">
                     </div>
                 </div>
             {% endif %}
-            <div class="{{ content_classes }}">
+            <div class="{{ content_classes }}" role="main">
                 {{ page.content }}
             </div>
             {% if page.sidebar_second %}
@@ -101,7 +101,7 @@
 
 <footer>
     <div class="container">
-        <div class="row align-items-center py-2 text-white">
+        <div class="row align-items-center py-2 text-white" role=”contentinfo”>
             <div class="col-12 text-center col-sm-6 text-sm-left">
                 <a class="d-inline-block" href="//lib.unb.ca" target="_blank">
                     <img alt="UNB Libraries" class="unb-lib-logo" src="/{{ directory }}/images/unb-libraries-white.png">
