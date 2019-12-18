@@ -329,6 +329,7 @@ display:
         style: false
         row: false
         css_class: false
+        title: false
       arguments:
         field_glossary_section_value:
           id: field_glossary_section_value
@@ -516,6 +517,7 @@ display:
           separator: ''
           hide_empty: false
       css_class: glossary-listing
+      title: 'All listings'
     cache_metadata:
       max-age: -1
       contexts:
