@@ -215,6 +215,8 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: query
             required: true
             remember: false
@@ -222,9 +224,8 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-            placeholder: 'Find a resource'
-            operator_limit_selection: false
-            operator_list: {  }
+              editor: '0'
+            placeholder: 'Find an entry'
           is_grouped: false
           group_info:
             label: ''
