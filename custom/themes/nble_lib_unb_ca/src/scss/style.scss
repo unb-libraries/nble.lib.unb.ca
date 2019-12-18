@@ -159,6 +159,12 @@ main {
     background: #f4c99c url(../../images/bg-sidebar.jpg) repeat-y;
     background-size: 100% auto;
 
+    .region-sidebar-first {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 12%;
+    }
+
     @media (max-width: 575px) {
       .abc-overlay {
         display: none;
