@@ -11,12 +11,14 @@ ldapEntryProvisionTriggers:
 userUpdateCronQuery: none
 userUpdateCronInterval: monthly
 orphanedDrupalAcctBehavior: ldap_user_orphan_do_not_check
-orphanedCheckQty: null
-orphanedAccountCheckInterval: always
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_show_option
 acctCreation: user_settings_for_ldap
-disableAdminPasswordField: true
 ldapUserSyncMappings:
   drupal: {  }
   ldap: {  }
+_core:
+  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
+disableAdminPasswordField: true
