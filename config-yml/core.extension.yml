@@ -27,6 +27,9 @@ module:
   history: 0
   image: 0
   language: 0
+  ldap_authentication: 0
+  ldap_servers: 0
+  ldap_user: 0
   link: 0
   menu_ui: 0
   nble_core: 0
@@ -53,6 +56,7 @@ module:
   views_ui: 0
   menu_link_content: 1
   pathauto: 1
+  externalauth: 10
   views: 10
   nble: 1000
 theme:
