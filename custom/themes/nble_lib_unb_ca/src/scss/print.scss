@@ -1,0 +1,59 @@
+/* ---------- General Layout ---------- */
+body {
+  color: #000;
+  background: none;
+
+  &:not(.path-frontpage) {
+    h1:before {
+      content: "The New Brunswick Literacy Encyclopedia";
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+header,
+.sidebar-first-wrapper,
+footer,
+#toolbar,
+.tabs,
+.shortcut-action {
+  display: none;
+}
+
+.col-sm-9 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+main .block-system-main-block article a:not([role="button"]),
+main .block-system-main-block .view a:not([role="button"]) {
+  border-bottom: none;
+  color: #000;
+  text-decoration: none;
+
+  &[href]:after {
+    content: " (" attr(href) ")";
+    font-size: smaller;
+    text-decoration: none;
+  }
+}
+
+blockquote {
+  page-break-inside: avoid;
+}
+
+figure {
+  &.border {
+    border: none!important;
+  }
+}
+
+h2, h3 {
+  color: #000;
+  /* Avoid a paragraph being detached from the heading immediately preceding it */
+  break-after: avoid-page;
+  page-break-after: avoid;
+}
