@@ -83,7 +83,7 @@
         "drupal/restui": "1.17",
         "drupal/search_api": "1.15",
         "drupal/search_api_solr": "3.7",
-        "drupal/token": "1.5",
+        "drupal/token": "1.6",
         "drupal/twig_field_value": "1.2",
         "drupal/twig_tweak": "2.4",
         "unb-libraries/drupal-builder": "^8.0.0"
