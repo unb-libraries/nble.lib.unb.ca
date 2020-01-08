@@ -40,6 +40,15 @@ h1, .h1 {
 }
 h2, .h2 {
   font-size: 1.4rem;
+  text-transform: lowercase;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+
+  &.text-transform-none {
+    text-transform: none;
+  }
 }
 h3, .h3 {
   font-size: 1.15rem;
