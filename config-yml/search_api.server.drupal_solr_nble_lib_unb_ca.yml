@@ -44,3 +44,10 @@ backend_config:
   optimize: false
   site_hash: false
   environment: default
+  disabled_caches: {  }
+  disabled_request_handlers:
+    - request_handler_elevate_default_7_0_0
+    - request_handler_replicationmaster_default_7_0_0
+    - request_handler_replicationslave_default_7_0_0
+  disabled_request_dispatchers:
+    - request_dispatcher_httpcaching_default_7_0_0
