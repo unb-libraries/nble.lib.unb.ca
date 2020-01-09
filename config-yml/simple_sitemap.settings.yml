@@ -1,14 +1,13 @@
 enabled_entity_types:
   - node
-  - menu_link_content
 max_links: 2000
 cron_generate: true
 cron_generate_interval: 0
 remove_duplicates: true
 skip_untranslated: true
 xsl: true
-base_url: ''
-default_variant: default
+base_url: 'https://nble.lib.unb.ca'
+default_variant: ''
 disable_language_hreflang: false
 excluded_languages: {  }
 generate_duration: 10000
