@@ -94,8 +94,8 @@
 
     {% if content.field_image|render|trim %}
         {% set image_src = content.field_image['#items'].entity.uri.value | image_style('encyclopedia_image') %}
-        <div class="col-lg-4 float-lg-right ml-lg-3 row text-center">
-            <figure class="border figure mx-auto p-2">
+        <div class="border col-8 col-lg-4 float-lg-right mb-3 mx-auto ml-lg-3 p-1 text-center">
+            <figure class="figure mx-auto my-0 p-2">
                 <img src="{{ image_src }}" class="figure-img img-fluid"
                      alt="{{ content.field_image_caption|render|striptags|trim }}">
                 <figcaption class="figure-caption">

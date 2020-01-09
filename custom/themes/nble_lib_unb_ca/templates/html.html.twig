@@ -40,6 +40,11 @@
 <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+    <meta name="msapplication-config" content="/themes/custom/nble_lib_unb_ca/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#ca853a">
+    <meta name="theme-color" content="#ca853a">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -48,11 +53,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/nble_lib_unb_ca/favicon-16x16.png">
     <link rel="manifest" href="/themes/custom/nble_lib_unb_ca/site.webmanifest">
     <link rel="mask-icon" href="/themes/custom/nble_lib_unb_ca/safari-pinned-tab.svg" color="#ca853a">
-    <meta name="msapplication-config" content="/themes/custom/nble_lib_unb_ca/browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#ca853a">
-    <meta name="theme-color" content="#ca853a">
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
 </head>
 <body{{ attributes.addClass(body_classes) }}>
 {#
