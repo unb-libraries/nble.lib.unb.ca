@@ -15,11 +15,37 @@ body {
 
 header,
 .sidebar-first-wrapper,
-footer,
 #toolbar,
 .tabs,
 .shortcut-action {
   display: none;
+}
+
+footer {
+  background: none;
+
+  .container {
+    border-color: #000;
+  }
+
+  div.text-center {
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:before {
+        content: "UNB Libraries";
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    span {
+      color: #000;
+    }
+  }
 }
 
 .col-sm-9 {
@@ -41,19 +67,20 @@ main .block-system-main-block .view a:not([role="button"]) {
   }
 }
 
-blockquote {
-  page-break-inside: avoid;
-}
+article {
+  blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 
-figure {
-  &.border {
-    border: none!important;
+  div {
+    &.border {
+      border: none!important;
+    }
   }
 }
 
-h2, h3 {
-  color: #000;
-  /* Avoid a paragraph being detached from the heading immediately preceding it */
-  break-after: avoid-page;
+h2, h3, h4 {
   page-break-after: avoid;
+  break-after: avoid-page;
 }
