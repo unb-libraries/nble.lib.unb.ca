@@ -76,6 +76,11 @@ header {
     border-top: 11px groove #b56327;
   }
 
+  .navbar-brand > div {
+    background: #f4c99c url(../../images/bg-sidebar.jpg) repeat-y;
+    background-size: 100% auto;
+  }
+
   .navbar {
     background-image: linear-gradient(to bottom, #b56327, #ba6b2b, #c07430, #c57c35, #ca853a, #ca853a, #ca853a, #ca853a, #c57c35, #c07430, #ba6b2b, #b56327);
     border-bottom: 3px ridge $navbar;
