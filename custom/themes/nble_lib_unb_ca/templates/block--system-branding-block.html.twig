@@ -15,18 +15,21 @@
 #}
 {% block content %}
   <div class="d-flex m-0 p-0 navbar-brand">
-      <div class="col-4 col-sm-3 px-0">
+      <div class="col-12 col-sm-3 px-2 py-3 px-sm-0 py-sm-0">
           <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
           {% if site_logo %}
-              <img class="img-fluid"
-                 src="/themes/custom/nble_lib_unb_ca/images/nble-logo.jpg"
-                 alt="{{ 'New Brunswick Literary Encyclopedia'|t }}">
+              <picture>
+                <source srcset="/themes/custom/nble_lib_unb_ca/images/nble-logo-sm.gif" media="(max-width: 575px)">
+                <img id="logo" class="img-fluid"
+                   src="/themes/custom/nble_lib_unb_ca/images/nble-logo.jpg"
+                   alt="{{ 'New Brunswick Literary Encyclopedia'|t }}">
+              </picture>
           {% else %}
               <span class="text-dark">{{ 'NBLE'|t }}</span>
           {% endif %}
           </a>
       </div>
-      <div class="col-8 col-sm-9 px-0">
+      <div class="d-none d-sm-block col-8 col-sm-9 px-0">
           {% if site_name %}
               <div class="sr-only">{{ site_name }}</div>
           {% endif %}
