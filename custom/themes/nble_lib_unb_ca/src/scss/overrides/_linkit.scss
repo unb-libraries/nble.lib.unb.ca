@@ -1,0 +1,9 @@
+/* Fix Bootstrap overflow suggestion modal */
+.ui-dialog .ui-dialog-content {
+  overflow: visible;
+}
+
+/* Hide description under each dropdown suggestion */
+.linkit-result--description {
+  display: none;
+}
