@@ -42,13 +42,13 @@
  * @see html.html.twig
  */
 #}
-{% set sidebar_first_classes = 'col-sm-3 sidebar-first-wrapper px-1 py-5' %}
+{% set sidebar_first_classes = 'col-sm-3 d-print-none sidebar-first-wrapper px-1 py-5' %}
 {%
-    set content_classes = page.sidebar_first ? 'col-sm-9 page-content-wrapper px-4 py-5'
-                                             : 'col-sm-12 page-content-wrapper px-4 py-5'
+    set content_classes = page.sidebar_first ? 'col-sm-9 d-print-block page-content-wrapper px-4 py-5'
+                                             : 'col-sm-12 d-print-block page-content-wrapper px-4 py-5'
 %}
 
-<header>
+<header {{ attributes.addClass('d-print-none') }}>
     <div class="container px-0" role="banner">
         {{ page.header }}
     </div>
@@ -78,7 +78,7 @@
         {% if page.breadcrumb %}
             {{ page.breadcrumb }}
         {% endif %}
-        <div class="row">
+        <div class="d-print-block row">
             {% if page.sidebar_first %}
                 <div class="{{ sidebar_first_classes }}" aria-label="{{ 'Search / Browse'|t }}" role="complementary">
                     {{ page.sidebar_first }}

@@ -1,8 +1,9 @@
 /* ---------- General Layout ---------- */
-body {
-  color: #000;
-  background: none;
 
+/** Setting margins */
+@page { margin: 2cm 1cm }
+
+body {
   &:not(.path-frontpage) {
     h1:before {
       content: "The New Brunswick Literacy Encyclopedia";
@@ -11,14 +12,71 @@ body {
       margin-bottom: 1.5rem;
     }
   }
+
+  .text-dark {
+    background: none;
+    color: #000;
+  }
 }
 
-header,
-.sidebar-first-wrapper,
+/* Hide admin regions */
 #toolbar,
 .tabs,
 .shortcut-action {
   display: none;
+}
+
+main {
+  color: #000;
+  background: none;
+  width: 100%;
+  margin: 0;
+  float: none;
+
+  .col-sm-9 {
+    padding: 0!important;
+    max-width: 100%;
+  }
+
+  article {
+    a:not([role="button"]),
+    .view a:not([role="button"]) {
+      border-bottom: none!important;
+      color: #000;
+      text-decoration: none;
+
+      &[href]:after {
+        content: "(" attr(href) ")";
+        font-size: x-small;
+        margin-left: .5em;
+        text-decoration: underline;
+      }
+    }
+
+    blockquote {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    div {
+      &.border {
+        border: none!important;
+      }
+    }
+  }
+}
+
+h2, h3, h4 {
+  margin-top: 2.5rem;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+p {
+  page-break-inside: avoid;
 }
 
 footer {
@@ -46,41 +104,4 @@ footer {
       color: #000;
     }
   }
-}
-
-.col-sm-9 {
-  flex: 0 0 100%;
-  max-width: 100%;
-  width: 100%;
-}
-
-main .block-system-main-block article a:not([role="button"]),
-main .block-system-main-block .view a:not([role="button"]) {
-  border-bottom: none;
-  color: #000;
-  text-decoration: none;
-
-  &[href]:after {
-    content: " (" attr(href) ")";
-    font-size: smaller;
-    text-decoration: none;
-  }
-}
-
-article {
-  blockquote {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  div {
-    &.border {
-      border: none!important;
-    }
-  }
-}
-
-h2, h3, h4 {
-  page-break-after: avoid;
-  break-after: avoid-page;
 }
