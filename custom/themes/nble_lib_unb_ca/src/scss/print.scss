@@ -26,6 +26,11 @@ body {
   display: none;
 }
 
+/* https://getbootstrap.com/docs/4.4/getting-started/browsers-devices/#printing */
+.container {
+  width: auto;
+}
+
 main {
   color: #000;
   background: none;
