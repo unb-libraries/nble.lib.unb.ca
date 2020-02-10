@@ -7,12 +7,14 @@ a {
 
   &:focus {
     background: none;
+    color: $link-hover-fg-color;
     outline: 0;
     box-shadow: 0 0 0 0.12rem rgba(0, 123, 255, 0.5);
   }
 
   &:hover {
     background: none;
+    color: $link-hover-fg-color;
   }
 }
 
@@ -75,6 +77,10 @@ header {
   .navbar-brand > div {
     background: #f4c99c url(../../images/bg-sidebar.jpg) repeat-y;
     background-size: 100% auto;
+
+    .img-fluid {
+      width: 100%;
+    }
   }
 
   .navbar {
