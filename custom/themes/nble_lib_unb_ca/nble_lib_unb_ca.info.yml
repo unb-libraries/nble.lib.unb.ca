@@ -5,8 +5,8 @@ package: 'nble_lib_unb_ca'
 description: 'For nble_lib_unb_ca'
 base theme: bootstrap4
 
-libraries:
-  - nble_lib_unb_ca/global-styling
+libraries-override:
+  bootstrap4/global-styling: nble_lib_unb_ca/global-styling
 
 regions:
   header: Header
