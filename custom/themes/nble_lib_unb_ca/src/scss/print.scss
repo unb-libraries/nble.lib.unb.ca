@@ -76,8 +76,15 @@ main {
 
 h2, h3, h4 {
   margin-top: 2.5rem;
-  page-break-after: avoid;
-  break-after: avoid-page;
+  page-break-inside: avoid;
+
+  /* Print hack for Chrome/Mozilla: page-break-after:avoid */
+  &::after {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-bottom: -100px;
+  }
 }
 
 p {
