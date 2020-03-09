@@ -74,7 +74,7 @@
         "drupal/bootstrap4": "1.0-rc4",
         "drupal/ckeditor_codemirror": "2.2",
         "drupal/config_update": "1.5",
-        "drupal/core": "8.8.2",
+        "drupal/core": "8.8.3",
         "drupal/editor_file": "1.4",
         "drupal/entity_reference_revisions": "1.7",
         "drupal/externalauth": "1.2",
