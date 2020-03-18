@@ -98,7 +98,7 @@
         "drupal/simple_sitemap": "3.5",
         "drupal/token": "1.6",
         "drupal/twig_field_value": "1.2",
-        "drupal/twig_tweak": "2.4",
+        "drupal/twig_tweak": "2.5",
         "unb-libraries/drupal-builder": "^8.0.0",
         "w8tcha/CKEditor-CodeMirror-Plugin": "^1.17.12"
     },
