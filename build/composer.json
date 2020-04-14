@@ -93,7 +93,7 @@
         "drupal/redis": "1.4",
         "drupal/require_login": "2.1",
         "drupal/restui": "1.17",
-        "drupal/search_api": "1.15",
+        "drupal/search_api": "1.16",
         "drupal/search_api_solr": "3.9",
         "drupal/simple_sitemap": "3.5",
         "drupal/token": "1.6",
