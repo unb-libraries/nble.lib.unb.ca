@@ -15,6 +15,7 @@ a {
   &:hover {
     background: none;
     color: $link-hover-fg-color;
+    text-decoration: none;
   }
 }
 
