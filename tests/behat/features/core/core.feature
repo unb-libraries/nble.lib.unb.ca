@@ -15,3 +15,9 @@ Feature: Core
       | Test user |      1 |
       When I am logged in as "Test user"
       Then I should see the text "Member for"
+
+  Scenario: Testing the search form
+    Given I am on the homepage
+    When I fill in "Find an entry" with "Test" in the "left sidebar" region
+    And I press "Search" in the "left sidebar" region
+    Then I should see the text "Search" in the "content" region
