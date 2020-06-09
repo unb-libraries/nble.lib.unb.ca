@@ -48,7 +48,7 @@ third_party_settings:
       collection: ''
       timezone: ''
 id: resources_nble_lib_unb_ca
-name: resources-nble-lib-unb-ca
+name: resources.nble.lib.unb.ca
 description: ''
 read_only: false
 field_settings:
