@@ -1,6 +1,11 @@
 /* Override textarea background */
 .cke_editable {
-    background: inherit;
+  background: inherit;
+
+  a {
+    border-bottom: 1px dotted $link-fg-color;
+    color: $link-fg-color;
+  }
 }
 /* Override toolbar dropdown item colors */
 .cke_panel_list {
