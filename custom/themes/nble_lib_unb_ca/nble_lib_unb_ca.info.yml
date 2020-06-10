@@ -16,3 +16,6 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: Footer
+
+ckeditor_stylesheets:
+  - dist/css/style.css

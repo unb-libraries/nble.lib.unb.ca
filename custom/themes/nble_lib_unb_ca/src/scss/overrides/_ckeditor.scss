@@ -1,0 +1,16 @@
+/* Override textarea background */
+.cke_editable {
+    background: inherit;
+}
+/* Override toolbar dropdown item colors */
+.cke_panel_list {
+  .cke_panel_listItem {
+    background: $white;
+    color: $black;
+
+    h2, h3, h4, h5, h6 {
+      background: inherit;
+      color: inherit;
+    }
+  }
+}
