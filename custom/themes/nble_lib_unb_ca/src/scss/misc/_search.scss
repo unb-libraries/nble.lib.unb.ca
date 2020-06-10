@@ -1,5 +1,5 @@
 /* Emulate sr-only class on search input label */
-label[for="edit-query"] {
+label[for^="edit-query"] {
   position: absolute;
   width: 1px;
   height: 1px;
