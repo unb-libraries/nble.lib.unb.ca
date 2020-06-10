@@ -52,6 +52,7 @@ settings:
           items:
             - Table
             - HorizontalRule
+            - SpecialChar
         -
           name: Tools
           items:
