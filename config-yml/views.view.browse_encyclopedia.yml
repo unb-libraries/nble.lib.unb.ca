@@ -320,7 +320,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<h2 class="h3 result-summary">Showing @start to @end of @total items</h2>'
+          content: '<h2 class="h3 result-summary">Found @total items</h2>'
           plugin_id: result
       defaults:
         header: false
