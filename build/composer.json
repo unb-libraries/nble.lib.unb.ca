@@ -64,7 +64,7 @@
                 "type": "drupal-library",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/v1.17.12.zip"
+                    "url": "https://github.com/w8tcha/ckeditor-codemirror-plugin/archive/v1.17.12.zip"
                 },
                 "extra": {
                     "installer-name": "ckeditor_codemirror"
@@ -103,7 +103,7 @@
         "drupal/twig_field_value": "1.2",
         "drupal/twig_tweak": "2.6",
         "unb-libraries/drupal-builder": "^8.0.0",
-        "w8tcha/CKEditor-CodeMirror-Plugin": "^1.17.12"
+        "w8tcha/ckeditor-codemirror-plugin": "^1.17.12"
     },
     "require-dev": {
         "unb-libraries/drupal-development-libraries": "^8.0.0"
