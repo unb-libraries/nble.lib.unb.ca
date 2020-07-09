@@ -135,8 +135,23 @@ function _nble_core_validate_final(array &$form, FormStateInterface $form_state)
         it is temporarily blocked. Please try again later.');
       $changed = TRUE;
     }
+    elseif (strpos($error, 'sign in with SSO') !== false) {
+      $errors['name'] = t('UNB/STU account detected: please sign in using <strong>@auth_link</strong>.',
+        [
+          '@auth_link' => Link::fromTextAndUrl(
+            t('Secure Services Login'),
+            Url::fromUri('base:/saml/login')
+          )->toString(),
+        ]
+      );
+      $changed = TRUE;
+
+      // Quick & dirty redundant SAML warning message removal: failed SAML validation.
+      $messenger = \Drupal::messenger();
+      $messenger->deleteByType($messenger::TYPE_WARNING);
+    }
   } else {
-    // Quick & dirty purge SAML warning message on no authentication error.
+    // Quick & dirty purge SAML warning message: successful login validation.
     $messenger = \Drupal::messenger();
     $messenger->deleteByType($messenger::TYPE_WARNING);
   }

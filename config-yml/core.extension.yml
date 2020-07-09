@@ -32,7 +32,7 @@ module:
   link: 0
   linkit: 0
   menu_ui: 0
-  nble_core: 0
+  nble_core: 10
   node: 0
   noreqnewpass: 0
   options: 0
