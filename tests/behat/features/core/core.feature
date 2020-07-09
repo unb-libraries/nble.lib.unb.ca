@@ -20,4 +20,4 @@ Feature: Core
     Given I am on the homepage
     When I fill in "Find an entry" with "Test" in the "left sidebar" region
     And I press "Search" in the "left sidebar" region
-    Then I should see the text "Search" in the "content" region
+    Then I should see the text "search" in the "content" region
