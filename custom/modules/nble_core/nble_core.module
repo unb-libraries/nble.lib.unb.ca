@@ -5,7 +5,15 @@
  * Contains nble_core.module.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function nble_core_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+  $form['name']['#description']='Enter your NBLE username <em>(non-UNB/STU patrons)</em>.';
+}
 
 /**
  * Implements hook_help().
