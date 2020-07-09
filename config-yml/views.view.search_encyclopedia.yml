@@ -66,7 +66,7 @@ display:
         type: html_list
         options:
           grouping: {  }
-          row_class: mb-4
+          row_class: 'mb-4 ml-0'
           default_row_class: false
           type: ul
           wrapper_class: item-list
@@ -110,7 +110,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: h2
           element_class: h3
           element_label_type: ''
           element_label_class: ''
@@ -265,7 +265,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<h2 class="h3 mb-4 result-summary">Showing @start - @end of @total results</h2>'
+          content: '<h1 class="mb-4">Showing <strong>@start - @end</strong> of @total search results</h1>'
           plugin_id: result
       footer: {  }
       empty:
@@ -292,8 +292,10 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.resources_nble_lib_unb_ca'
   page_1:
     display_plugin: page
     id: page_1
@@ -310,5 +312,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.resources_nble_lib_unb_ca'

@@ -12,8 +12,8 @@ label[for^="edit-query"] {
 
 // Apply glossary-like theming to Views pager buttons.
 main .block-system-main-block .view .pager__item a:not([role="button"]) {
-  background: $dark-red;
-  border: 1px solid $widget-border-color;
+  background: $glossary-bg-color;
+  border: 1px solid $gray-600;
   border-radius: .33rem;
   color: $white;
   padding: .4rem .65rem;
@@ -35,7 +35,7 @@ main .block-system-main-block .view .pager__item a:not([role="button"]) {
     line-height: 1.4;
 
     strong {
-      color: $glossary-bg-color;
+      color: $dark-red;
     }
   }
 }

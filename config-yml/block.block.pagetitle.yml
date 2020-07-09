@@ -2,6 +2,8 @@ uuid: f18a813a-b133-4c12-b569-8af15fbba253
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - nble_lib_unb_ca
 id: pagetitle
@@ -15,4 +17,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search*'
+    negate: true
+    context_mapping: {  }
