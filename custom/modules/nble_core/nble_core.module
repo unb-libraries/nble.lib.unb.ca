@@ -6,13 +6,30 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_form_FORM_ID_alter().
  */
 function nble_core_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
   $form['name']['#description']='Enter your NBLE username <em>(non-UNB/STU patrons)</em>.';
+  if (!\Drupal::currentUser()->isAuthenticated()) {
+    $messenger = \Drupal::messenger();
+    $messenger->addMessage(
+      t('UNB/STU patrons must sign in using <strong>@auth_link</strong>.',
+        [
+          '@auth_link' => Link::fromTextAndUrl(
+            t('Secure Services Login'),
+            Url::fromUri('base:/saml/login')
+          )->toString(),
+        ]
+      ),
+      $messenger::TYPE_WARNING,
+      FALSE
+    );
+  }
 }
 
 /**
