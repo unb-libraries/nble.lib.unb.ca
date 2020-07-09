@@ -7,6 +7,7 @@ div[data-drupal-selector="views-exposed-form-search-encyclopedia-page-1"] {
     & > div.form--inline > div {
       display: grid;
       margin-bottom: .25rem;
+      margin-top: 0;
 
       @media (min-width: 992px) {
         display: table-cell;
