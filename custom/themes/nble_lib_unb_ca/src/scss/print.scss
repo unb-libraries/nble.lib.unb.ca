@@ -48,14 +48,7 @@ main {
     .view a:not([role="button"]) {
       border-bottom: none!important;
       color: #000;
-      text-decoration: none;
-
-      &[href]:after {
-        content: "(" attr(href) ")";
-        font-size: x-small;
-        margin-left: .5em;
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
 
     blockquote {
