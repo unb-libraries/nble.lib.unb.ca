@@ -1,7 +1,6 @@
 FROM unblibraries/drupal:dockworker-2.x
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
-ARG COMPOSER_DEPLOY_DEV=no-dev
 ENV DRUPAL_SITE_ID nble
 ENV DRUPAL_SITE_URI nble.lib.unb.ca
 ENV DRUPAL_SITE_UUID f6af2f7e-d7a2-4dd7-a17b-e9c7a4ca4124
@@ -19,10 +18,9 @@ RUN /scripts/addOsPackages.sh && \
 COPY ./package-conf /package-conf
 RUN /scripts/setupStandardConf.sh
 COPY ./build /build
-RUN /scripts/build.sh ${COMPOSER_DEPLOY_DEV} ${DRUPAL_BASE_PROFILE}
+RUN /scripts/build.sh ${DRUPAL_BASE_PROFILE}
 
 # Deploy repository assets.
-COPY ./tests/ ${DRUPAL_TESTING_ROOT}/
 COPY ./config-yml ${DRUPAL_CONFIGURATION_DIR}
 COPY ./custom/themes ${DRUPAL_ROOT}/themes/custom
 COPY ./custom/modules ${DRUPAL_ROOT}/modules/custom

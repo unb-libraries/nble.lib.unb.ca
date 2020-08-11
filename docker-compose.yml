@@ -35,8 +35,6 @@ services:
   nble.lib.unb.ca:
     build:
       context: .
-      args:
-        - COMPOSER_DEPLOY_DEV=dev
     restart: always
     container_name: nble.lib.unb.ca
     depends_on:
