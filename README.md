@@ -1,9 +1,12 @@
 ![nble.lib.unb.ca screenshot](https://github.com/unb-libraries/nble.lib.unb.ca/raw/prod/.dockworker/screenshot.png "nble.lib.unb.ca screenshot")
 # [nble.lib.unb.ca](https://nble.lib.unb.ca/) : Instance Repository
-[![Build Status](https://travis-ci.com/unb-libraries/nble.lib.unb.ca.svg?token=svPMGz2VyFgGszm9Zkfb&branch=prod)](https://travis-ci.com/unb-libraries/nble.lib.unb.ca)
+[//]: badges
+[![Build Status](https://travis-ci.com/unb-libraries/nble.lib.unb.ca.svg?branch=prod)](https://travis-ci.com/unb-libraries/nble.lib.unb.ca)
 [![GitHub license](https://img.shields.io/github/license/unb-libraries/nble.lib.unb.ca)](https://github.com/unb-libraries/nble.lib.unb.ca/blob/prod/LICENSE)
-![GitHub repo size](https://img.shields.io/github/languages/code-size/unb-libraries/nble.lib.unb.ca)
+![GitHub repo size](https://img.shields.io/github/repo-size/unb-libraries/nble.lib.unb.ca?label=lean%20repo%20size)
 [![Docker image size](https://img.shields.io/docker/image-size/unblibraries/nble.lib.unb.ca/prod?label=docker%20image%20size)](https://hub.docker.com/repository/docker/unblibraries/nble.lib.unb.ca)
+
+[//]: badges
 
 This repository contains all assets used to test, build, and deploy the [nble.lib.unb.ca](https://nble.lib.unb.ca) Drupal application. This repository extends the [unb-libraries/docker-drupal](https://github.com/unb-libraries/docker-drupal) base image, which deploys nginx and php-fpm in the service container.
 
