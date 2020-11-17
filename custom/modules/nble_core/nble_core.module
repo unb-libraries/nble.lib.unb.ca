@@ -5,34 +5,7 @@
  * Contains nble_core.module.
  */
 
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Link;
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\Core\StringTranslation\TranslatableMarkup;
-use Drupal\Core\Url;
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function nble_core_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
-  $form['name']['#description']='Enter your NBLE username <em>(non-UNB/STU patrons)</em>.';
-  if (!\Drupal::currentUser()->isAuthenticated()) {
-    $messenger = \Drupal::messenger();
-    $messenger->addMessage(
-      t('UNB/STU patrons must sign in using <strong>@auth_link</strong>.',
-        [
-          '@auth_link' => Link::fromTextAndUrl(
-            t('Secure Services Login'),
-            Url::fromUri('base:/saml/login')
-          )->toString(),
-        ]
-      ),
-      $messenger::TYPE_WARNING,
-      FALSE
-    );
-    array_push($form['#validate'], '_nble_core_validate_final');
-  }
-}
 
 /**
  * Implements hook_help().
@@ -107,60 +80,5 @@ function nble_core_node_presave($node) {
         $node->set('field_glossary_section', strtoupper($listing_section[0]));
       }
       break;
-  }
-}
-
-/**
- * Form validation callback.
- *
- * Alter text of error messages, removing request/reset password url references.
- * Based from https://www.drupal.org/sandbox/ekes/emaillogin.
- *
- * @see nblce_core_form_user_login_form_alter()
- */
-function _nble_core_validate_final(array &$form, FormStateInterface $form_state) {
-  $changed = FALSE;
-  if (($errors = $form_state->getErrors()) && !empty($errors['name']) && $errors['name'] instanceof TranslatableMarkup) {
-    $error = $errors['name']->getUntranslatedString();
-    if (strpos($error, 'Unrecognized username or password') !== false) {
-      $errors['name'] = t(
-        'Unrecognized username or password. Please try again.',
-        $errors['name']->getArguments()
-      );
-      $changed = TRUE;
-    }
-    elseif (strpos($error, 'failed login attempts for this account. It is temporarily blocked') !== false) {
-      $errors['name'] = t('There have been more than 5 failed login attempts for this account and
-        it is temporarily blocked. Please try again later.');
-      $changed = TRUE;
-    }
-    elseif (strpos($error, 'sign in with SSO') !== false) {
-      $errors['name'] = t('UNB/STU account detected: please sign in using <strong>@auth_link</strong>.',
-        [
-          '@auth_link' => Link::fromTextAndUrl(
-            t('Secure Services Login'),
-            Url::fromUri('base:/saml/login')
-          )->toString(),
-        ]
-      );
-      $changed = TRUE;
-
-      // Quick & dirty redundant SAML warning message removal: failed SAML validation.
-      $messenger = \Drupal::messenger();
-      $messenger->deleteByType($messenger::TYPE_WARNING);
-    }
-  } else {
-    // Quick & dirty purge SAML warning message: successful login validation.
-    $messenger = \Drupal::messenger();
-    $messenger->deleteByType($messenger::TYPE_WARNING);
-  }
-
-  if ($changed) {
-    // It's clear and reset or set the protected variable by name with
-    // FormState::setFormState().
-    $form_state->clearErrors();
-    foreach ($errors as $name => $error) {
-      $form_state->setErrorByName($name, $error);
-    }
   }
 }
