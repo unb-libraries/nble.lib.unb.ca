@@ -100,7 +100,7 @@
         "drupal/simple_sitemap": "3.8",
         "drupal/token": "1.9",
         "drupal/twig_field_value": "2.0.0",
-        "drupal/twig_tweak": "2.8",
+        "drupal/twig_tweak": "2.9",
         "unb-libraries/drupal-builder": "^8.0.0",
         "unb-libraries/saml_features": "dev-8.x-1.x",
         "w8tcha/ckeditor-codemirror-plugin": "^1.17.12"
