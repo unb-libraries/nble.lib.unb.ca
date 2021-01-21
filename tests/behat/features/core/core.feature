@@ -14,6 +14,7 @@ Feature: Core
       | name      | status |
       | Test user |      1 |
       When I am logged in as "Test user"
+      And I visit "/user"
       Then I should see the text "Member for"
 
   Scenario: Testing the search form
