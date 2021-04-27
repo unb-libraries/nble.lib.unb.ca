@@ -36,7 +36,7 @@ user_mail_attribute: mail
 security_assertions_encrypt: false
 security_logout_reuse_sigs: false
 security_signature_algorithm: 'http://www.w3.org/2000/09/xmldsig#rsa-sha1'
-debug_log_saml_out: 0
-debug_log_saml_in: 0
-debug_log_in: 0
-debug_phpsaml: 0
+debug_log_saml_out: false
+debug_log_saml_in: false
+debug_log_in: false
+debug_phpsaml: false
