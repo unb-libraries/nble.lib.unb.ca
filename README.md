@@ -1,4 +1,3 @@
-![nble.lib.unb.ca screenshot](https://github.com/unb-libraries/nble.lib.unb.ca/raw/prod/.dockworker/screenshot.png "nble.lib.unb.ca screenshot")
 # [nble.lib.unb.ca](https://nble.lib.unb.ca/) : Lean Instance Repository
 [![Build Status](https://github.com/unb-libraries/nble.lib.unb.ca/actions/workflows/test-suite.yaml/badge.svg?branch=prod)](https://github.com/unb-libraries/nble.lib.unb.ca/actions/workflows/test-suite.yaml)
 [![GitHub license](https://img.shields.io/github/license/unb-libraries/nble.lib.unb.ca)](https://github.com/unb-libraries/nble.lib.unb.ca/blob/prod/LICENSE)
