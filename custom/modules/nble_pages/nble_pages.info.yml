@@ -2,6 +2,7 @@ name: NBLE Page Content Import
 type: module
 description: Import page content from original stu-sites domain.
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: Migration
 dependencies:
   - migrate:migrate
