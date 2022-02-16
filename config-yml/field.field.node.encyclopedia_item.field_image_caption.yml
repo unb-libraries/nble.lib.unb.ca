@@ -10,10 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    restricted_html: restricted_html
-    full_html: '0'
-    basic_html: '0'
-    plain_text: '0'
+    allowed_formats:
+      - restricted_html
 id: node.encyclopedia_item.field_image_caption
 field_name: field_image_caption
 entity_type: node
