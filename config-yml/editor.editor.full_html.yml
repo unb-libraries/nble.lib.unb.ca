@@ -68,9 +68,9 @@ settings:
       styles: ''
     codemirror:
       enable: true
-      startupMode: wysiwyg
       mode: htmlmixed
       theme: tomorrow-night-bright
+      startupMode: wysiwyg
       options:
         lineNumbers: true
         lineWrapping: true

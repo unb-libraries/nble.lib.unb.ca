@@ -20,33 +20,33 @@ bundle: encyclopedia_item
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: encyclopedia_image
       image_link: ''
+      image_style: encyclopedia_image
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_image_caption:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   links:
-    weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   field_glossary_section: true
   field_listing_title: true

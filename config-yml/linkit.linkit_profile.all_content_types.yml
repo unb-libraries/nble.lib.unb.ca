@@ -4,19 +4,19 @@ status: true
 dependencies:
   module:
     - node
-id: all_content_types
 label: 'All content types'
+id: all_content_types
 description: ''
 matchers:
   d38b1874-b28c-4be8-9cb0-5954656f50e4:
-    uuid: d38b1874-b28c-4be8-9cb0-5954656f50e4
     id: 'entity:node'
-    weight: 0
+    uuid: d38b1874-b28c-4be8-9cb0-5954656f50e4
     settings:
-      result_description: ''
+      metadata: ''
       bundles: {  }
       group_by_bundle: false
-      include_unpublished: false
-      metadata: ''
       substitution_type: canonical
       limit: 100
+      include_unpublished: false
+      result_description: ''
+    weight: 0
