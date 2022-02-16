@@ -59,7 +59,7 @@
         {
             "type": "package",
             "package": {
-                "name": "w8tcha/CKEditor-CodeMirror-Plugin",
+                "name": "w8tcha/ckeditor-codemirror-plugin",
                 "version": "1.17.12",
                 "type": "drupal-library",
                 "dist": {
