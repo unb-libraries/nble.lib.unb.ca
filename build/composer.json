@@ -107,7 +107,7 @@
         "drupal/linkit": "5.0-beta13",
         "drupal/login_destination": "2.0-beta1",
         "drupal/noreqnewpass": "1.2",
-        "drupal/pathauto": "1.8",
+        "drupal/pathauto": "1.9",
         "drupal/redis": "1.5",
         "drupal/samlauth": "3.4",
         "drupal/search_api": "1.23",
