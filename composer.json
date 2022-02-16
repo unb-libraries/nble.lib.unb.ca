@@ -1,4 +1,3 @@
-
 {
   "license": "MIT",
   "minimum-stability": "dev",
@@ -8,6 +7,9 @@
   "config": {
     "preferred-install": {
       "*": "dist"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "repositories": [
