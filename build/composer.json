@@ -1,150 +1,150 @@
 {
-    "authors": [
-        {
-            "name": "UNB Libraries libsupport@unb.ca",
-            "role": "Creator"
-        }
+  "authors": [
+    {
+      "name": "UNB Libraries libsupport@unb.ca",
+      "role": "Creator"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true
+    },
+    "discard-changes": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "description": "Drupal 8 component of nble.lib.unb.ca",
+  "extra": {
+    "enable-patching": true,
+    "installer-paths": {
+      "core": [
+        "type:drupal-core"
+      ],
+      "drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ]
+    },
+    "patches": {
+      "drupal/samlauth": {
+        "Ignore Role Restrictions": "/build/patches/samlauth_rolematch.patch"
+      }
+    }
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "unb-libraries/nble.lib.unb.ca",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/w8tcha/ckeditor-codemirror-plugin/archive/v1.17.12.zip"
+        },
+        "extra": {
+          "installer-name": "ckeditor_codemirror"
+        },
+        "name": "w8tcha/ckeditor-codemirror-plugin",
+        "type": "drupal-library",
+        "version": "1.17.12"
+      },
+      "type": "package"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/markgoodyear/scrollup/archive/refs/heads/master.zip"
+        },
+        "extra": {
+          "installer-name": "scrollup"
+        },
+        "name": "markgoodyear/scrollup",
+        "type": "drupal-library",
+        "version": "dev-master"
+      },
+      "type": "package"
+    }
+  ],
+  "require": {
+    "drupal/allowed_formats": "1.4",
+    "drupal/bootstrap4": "2.1.14",
+    "drupal/ckeditor_codemirror": "2.3",
+    "drupal/config_update": "1.7",
+    "drupal/core": "9.3.8",
+    "drupal/editor_file": "1.6",
+    "drupal/entity_reference_revisions": "1.9",
+    "drupal/externalauth": "1.4",
+    "drupal/field_formatter_class": "1.5",
+    "drupal/field_group": "3.2",
+    "drupal/fixed_block_content": "1.1",
+    "drupal/fontawesome": "2.16",
+    "drupal/google_analytics": "2.5",
+    "drupal/health_check": "1.3",
+    "drupal/jquery_scrollup": "1.0",
+    "drupal/key": "1.14",
+    "drupal/linkit": "5.0-beta13",
+    "drupal/login_destination": "2.0-beta1",
+    "drupal/noreqnewpass": "1.2",
+    "drupal/pathauto": "1.9",
+    "drupal/redis": "1.5",
+    "drupal/samlauth": "3.5",
+    "drupal/search_api": "1.23",
+    "drupal/search_api_solr": "4.2.7",
+    "drupal/simple_sitemap": "3.11",
+    "drupal/token": "1.10",
+    "drupal/twig_field_value": "2.0.0",
+    "drupal/twig_tweak": "2.9",
+    "markgoodyear/scrollup": "dev-master",
+    "unb-libraries/drupal-builder": "^9",
+    "unb-libraries/saml_features": "dev-8.x-1.x",
+    "w8tcha/ckeditor-codemirror-plugin": "^1.17.12"
+  },
+  "require-dev": {
+    "unb-libraries/drupal-development-libraries": "^9"
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "post-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true
-        },
-        "discard-changes": true,
-        "preferred-install": {
-            "*": "dist"
-        },
-        "sort-packages": true
-    },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "description": "Drupal 8 component of nble.lib.unb.ca",
-    "extra": {
-        "enable-patching": true,
-        "installer-paths": {
-            "core": [
-                "type:drupal-core"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ],
-            "libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ]
-        },
-        "patches": {
-            "drupal/samlauth": {
-                "Ignore Role Restrictions": "/build/patches/samlauth_rolematch.patch"
-            }
-        }
-    },
-    "license": "MIT",
-    "minimum-stability": "dev",
-    "name": "unb-libraries/nble.lib.unb.ca",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/w8tcha/ckeditor-codemirror-plugin/archive/v1.17.12.zip"
-                },
-                "extra": {
-                    "installer-name": "ckeditor_codemirror"
-                },
-                "name": "w8tcha/ckeditor-codemirror-plugin",
-                "type": "drupal-library",
-                "version": "1.17.12"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/markgoodyear/scrollup/archive/refs/heads/master.zip"
-                },
-                "extra": {
-                    "installer-name": "scrollup"
-                },
-                "name": "markgoodyear/scrollup",
-                "type": "drupal-library",
-                "version": "dev-master"
-            },
-            "type": "package"
-        }
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
-    "require": {
-        "drupal/allowed_formats": "1.4",
-        "drupal/bootstrap4": "2.1.14",
-        "drupal/ckeditor_codemirror": "2.3",
-        "drupal/config_update": "1.7",
-        "drupal/core": "9.3.7",
-        "drupal/editor_file": "1.6",
-        "drupal/entity_reference_revisions": "1.9",
-        "drupal/externalauth": "1.4",
-        "drupal/field_formatter_class": "1.5",
-        "drupal/field_group": "3.2",
-        "drupal/fixed_block_content": "1.1",
-        "drupal/fontawesome": "2.16",
-        "drupal/google_analytics": "2.5",
-        "drupal/health_check": "1.3",
-        "drupal/jquery_scrollup": "1.0",
-        "drupal/key": "1.14",
-        "drupal/linkit": "5.0-beta13",
-        "drupal/login_destination": "2.0-beta1",
-        "drupal/noreqnewpass": "1.2",
-        "drupal/pathauto": "1.9",
-        "drupal/redis": "1.5",
-        "drupal/samlauth": "3.5",
-        "drupal/search_api": "1.23",
-        "drupal/search_api_solr": "4.2.7",
-        "drupal/simple_sitemap": "3.11",
-        "drupal/token": "1.10",
-        "drupal/twig_field_value": "2.0.0",
-        "drupal/twig_tweak": "2.9",
-        "markgoodyear/scrollup": "dev-master",
-        "unb-libraries/drupal-builder": "^9",
-        "unb-libraries/saml_features": "dev-8.x-1.x",
-        "w8tcha/ckeditor-codemirror-plugin": "^1.17.12"
-    },
-    "require-dev": {
-        "unb-libraries/drupal-development-libraries": "^9"
-    },
-    "scripts": {
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ]
-    },
-    "type": "project"
+    "pre-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ],
+    "pre-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ]
+  },
+  "type": "project"
 }
