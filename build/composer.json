@@ -95,7 +95,7 @@
     }
   ],
   "require": {
-    "drupal/allowed_formats": "1.4",
+    "drupal/allowed_formats": "1.5",
     "drupal/bootstrap4": "2.1.14",
     "drupal/ckeditor_codemirror": "2.3",
     "drupal/config_update": "1.7",
