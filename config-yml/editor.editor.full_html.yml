@@ -62,10 +62,6 @@ settings:
     drupallink:
       linkit_enabled: true
       linkit_profile: all_content_types
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
     codemirror:
       enable: true
       mode: htmlmixed
