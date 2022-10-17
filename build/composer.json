@@ -49,8 +49,7 @@
         "type:drupal-theme"
       ]
     },
-    "patches": {
-    }
+    "patches": {}
   },
   "license": "MIT",
   "minimum-stability": "dev",
@@ -97,7 +96,7 @@
     "drupal/bootstrap4": "2.1.15",
     "drupal/ckeditor_codemirror": "2.4",
     "drupal/config_update": "1.7",
-    "drupal/core": "9.4.7",
+    "drupal/core": "9.4.8",
     "drupal/editor_file": "1.6",
     "drupal/entity_reference_revisions": "1.9",
     "drupal/externalauth": "1.4",
