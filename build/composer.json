@@ -118,7 +118,7 @@
     "drupal/search_api_solr": "4.2.9",
     "drupal/simple_sitemap": "3.11",
     "drupal/token": "1.11",
-    "drupal/twig_field_value": "2.0.0",
+    "drupal/twig_field_value": "2.0.1",
     "drupal/twig_tweak": "2.10",
     "markgoodyear/scrollup": "dev-master",
     "unb-libraries/drupal-builder": "^9",
