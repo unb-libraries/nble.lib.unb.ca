@@ -117,7 +117,7 @@
     "drupal/redis": "1.7",
     "drupal/samlauth": "3.8",
     "drupal/search_api": "1.29",
-    "drupal/search_api_solr": "4.2.10",
+    "drupal/search_api_solr": "4.2.12",
     "drupal/simple_sitemap": "4.1.6",
     "drupal/token": "1.11",
     "drupal/twig_field_value": "2.0.2",
