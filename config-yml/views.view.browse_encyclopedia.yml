@@ -517,7 +517,15 @@ display:
           plugin_id: result
           empty: false
           content: '<h2 class="h3 result-summary">Found @total items</h2>'
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender:
+          variants:
+            default:
+              index: true
+              priority: '0.5'
+              changefreq: ''
+              arguments: {  }
+              max_links: 100
       path: browse
     cache_metadata:
       max-age: -1

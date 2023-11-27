@@ -295,6 +295,7 @@ display:
         - user.permissions
       tags:
         - 'config:search_api.index.resources_nble_lib_unb_ca'
+        - 'search_api_list:resources_nble_lib_unb_ca'
   page_1:
     id: page_1
     display_title: Page
@@ -302,7 +303,9 @@ display:
     position: 1
     display_options:
       exposed_block: true
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender:
+          variants: {  }
       path: search
     cache_metadata:
       max-age: -1
@@ -315,3 +318,4 @@ display:
         - user.permissions
       tags:
         - 'config:search_api.index.resources_nble_lib_unb_ca'
+        - 'search_api_list:resources_nble_lib_unb_ca'
