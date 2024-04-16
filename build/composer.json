@@ -122,7 +122,7 @@
     "drupal/simple_sitemap": "4.1.6",
     "drupal/token": "1.12",
     "drupal/twig_field_value": "2.0.2",
-    "drupal/twig_tweak": "2.10",
+    "drupal/twig_tweak": "3.3.0",
     "markgoodyear/scrollup": "dev-master",
     "unb-libraries/drupal-builder": "^9",
     "unb-libraries/saml_features": "dev-9.x-1.x",
