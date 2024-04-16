@@ -98,7 +98,7 @@
     "drupal/bootstrap4": "2.1.18",
     "drupal/ckeditor": "1.0.2",
     "drupal/ckeditor_codemirror": "2.4",
-    "drupal/config_update": "1.7",
+    "drupal/config_update": "1.8",
     "drupal/core": "9.5.11",
     "drupal/editor_file": "1.7",
     "drupal/entity_reference_revisions": "1.9",
