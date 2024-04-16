@@ -109,7 +109,7 @@
     "drupal/fontawesome": "2.16",
     "drupal/google_analytics": "4.0.2",
     "drupal/health_check": "2.0.1",
-    "drupal/jquery_scrollup": "1.0",
+    "drupal/jquery_scrollup": "2.0.0",
     "drupal/key": "1.14",
     "drupal/linkit": "6.0.2",
     "drupal/login_destination": "2.0-beta6",
