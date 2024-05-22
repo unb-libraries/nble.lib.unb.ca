@@ -15,6 +15,7 @@ jobs:
       image-name: 'ghcr.io/unb-libraries/nble.lib.unb.ca'
       k8s-deployment-name: 'nble-lib-unb-ca'
       push-branches: '["dev","prod"]'
+      platforms: 'linux/amd64'
     secrets:
       KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
