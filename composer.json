@@ -1,4 +1,9 @@
 {
+  "autoload": {
+    "psr-4": {
+      "Dockworker\\": ".dockworker/src"
+    }
+  },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
@@ -8,10 +13,10 @@
       "*": "dist"
     }
   },
-  "description": "Scaffold and provision local development for composites.lib.unb.ca",
+  "description": "Scaffold and provision local development for nble.lib.unb.ca",
   "license": "MIT",
   "minimum-stability": "dev",
-  "name": "unb-libraries/composites.lib.unb.ca",
+  "name": "unb-libraries/nble.lib.unb.ca",
   "prefer-stable": true,
   "replace": {
     "drupal/core": "*"
@@ -24,11 +29,11 @@
   ],
   "require-dev": {
     "drupal/bootstrap4": "2.1.16",
-    "unb-libraries/dockworker-drupal": "^5"
+    "unb-libraries/dockworker-drupal": "^6"
   },
   "scripts": {
     "post-update-cmd": [
-      "vendor/bin/dockworker dockworker:git:setup-hooks"
+      "vendor/bin/dockworker git:setup-hooks"
     ]
   }
 }

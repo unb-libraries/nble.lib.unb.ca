@@ -22,7 +22,7 @@ services:
       - nble.lib.unb.ca
     entrypoint:
       - docker-entrypoint-multiple.sh
-      - resources.nble.lib.unb.ca:/solr-conf
+      - resources.nble-lib-unb-ca:/solr-conf
     volumes:
       - solr-data:/opt/solr/server/solr/mycores
   drupal-redis-lib-unb-ca:
@@ -34,11 +34,11 @@ services:
       - nble.lib.unb.ca
     env_file:
       - ./env/redis.env
-  nble.lib.unb.ca:
+  nble-lib-unb-ca:
     build:
       context: .
     restart: unless-stopped
-    container_name: nble.lib.unb.ca
+    container_name: nble-lib-unb-ca
     depends_on:
       - drupal-mysql-lib-unb-ca
       - drupal-solr-lib-unb-ca
@@ -53,7 +53,7 @@ services:
       - ./env/drupal.env
     volumes:
       - drupal-data:/app/html/sites/default
-      - ./config-yml:/app/configuration
+      - ./configuration:/app/configuration
       - ./custom/modules:/app/html/modules/custom
       - ./custom/themes:/app/html/themes/custom
       - ./tests:/app/tests
