@@ -67,6 +67,8 @@ services:
       - "4104:8025"
     networks:
       - nble.lib.unb.ca
+    profiles:
+      - mailhog
 networks:
   nble.lib.unb.ca:
     name: nble.lib.unb.ca
