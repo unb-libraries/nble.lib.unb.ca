@@ -120,7 +120,7 @@
     "drupal/search_api": "<=1.30",
     "drupal/search_api_solr": "<=4.3.1",
     "drupal/simple_sitemap": "<4.2.1",
-    "drupal/token": "1.14",
+    "drupal/token": "1.15",
     "drupal/twig_field_value": "2.0.2",
     "drupal/twig_tweak": "3.3.0",
     "markgoodyear/scrollup": "dev-master",
