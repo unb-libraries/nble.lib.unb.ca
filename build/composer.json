@@ -102,7 +102,7 @@
     "drupal/core": "9.5.11",
     "drupal/editor_file": "1.8",
     "drupal/entity_reference_revisions": "1.9",
-    "drupal/externalauth": "2.0.5",
+    "drupal/externalauth": "2.0.6",
     "drupal/field_formatter_class": "1.5",
     "drupal/field_group": "3.4",
     "drupal/fixed_block_content": "1.1",
