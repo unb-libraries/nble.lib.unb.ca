@@ -1,0 +1,17 @@
+uuid: e8fa32a5-91e6-449d-b58c-1ce86a4b47e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Encyclopedia Item'
+type: encyclopedia_item
+description: "Use <em>Encyclodpedia items</em> for content listed in the encyclopedia <em>Glossary</em>. Ex:  'Acadiensis' under the  'A'  section.\r\n"
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

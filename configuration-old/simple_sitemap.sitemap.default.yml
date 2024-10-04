@@ -1,0 +1,11 @@
+uuid: 686b4553-1483-49de-9d33-612fe58df20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.default_hreflang
+id: default
+label: Default
+description: null
+type: default_hreflang
+weight: 0

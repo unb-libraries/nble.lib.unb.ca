@@ -1,0 +1,15 @@
+uuid: 9b118559-7f91-4685-b421-2da6e1969b0c
+langcode: en
+status: true
+dependencies: {  }
+name: encyclopedia_image
+label: 'Encyclopedia Image'
+effects:
+  e37af95d-e6e7-4f93-a68f-78a46f89c883:
+    uuid: e37af95d-e6e7-4f93-a68f-78a46f89c883
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: true

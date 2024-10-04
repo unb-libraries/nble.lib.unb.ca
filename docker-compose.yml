@@ -26,8 +26,9 @@ services:
     volumes:
       - solr-data:/opt/solr/server/solr/mycores
   drupal-redis-lib-unb-ca:
-    image: redis:5-alpine
+    image: redis:7-alpine
     restart: unless-stopped
+    command: redis-server --maxmemory-policy allkeys-lru --maxmemory 128mb
     expose:
       - "6379"
     networks:

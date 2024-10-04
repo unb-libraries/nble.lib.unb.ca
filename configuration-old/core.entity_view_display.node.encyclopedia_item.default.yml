@@ -1,0 +1,56 @@
+uuid: 2a9d682a-3bfe-4dc9-9f0a-6c26b543900e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.encyclopedia_item.body
+    - field.field.node.encyclopedia_item.field_glossary_section
+    - field.field.node.encyclopedia_item.field_image
+    - field.field.node.encyclopedia_item.field_image_caption
+    - field.field.node.encyclopedia_item.field_listing_title
+    - image.style.encyclopedia_image
+    - node.type.encyclopedia_item
+  module:
+    - image
+    - text
+    - user
+id: node.encyclopedia_item.default
+targetEntityType: node
+bundle: encyclopedia_item
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: encyclopedia_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_caption:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_glossary_section: true
+  field_listing_title: true
+  langcode: true
+  search_api_excerpt: true

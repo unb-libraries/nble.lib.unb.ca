@@ -1,0 +1,25 @@
+uuid: f18a813a-b133-4c12-b569-8af15fbba253
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nble_lib_unb_ca
+id: pagetitle
+theme: nble_lib_unb_ca
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/search*'

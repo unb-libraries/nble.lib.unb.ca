@@ -2,7 +2,7 @@ name: 'NBLE Core'
 type: module
 description: 'Provides core functionality for the NBLE site.'
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 package: 'UNB Libraries'
 dependencies:
   - field_group

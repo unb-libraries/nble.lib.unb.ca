@@ -1,0 +1,26 @@
+uuid: d6cb64b7-cfb1-4f59-bdf3-9dba92e6a2c5
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create basic_page content'
+  - 'create encyclopedia_item content'
+  - 'delete any basic_page content'
+  - 'delete any encyclopedia_item content'
+  - 'delete basic_page revisions'
+  - 'delete encyclopedia_item revisions'
+  - 'edit any basic_page content'
+  - 'edit any encyclopedia_item content'
+  - 'revert basic_page revisions'
+  - 'revert encyclopedia_item revisions'
+  - 'view basic_page revisions'
+  - 'view encyclopedia_item revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

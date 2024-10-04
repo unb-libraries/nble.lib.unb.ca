@@ -1,0 +1,11 @@
+uuid: b50769c3-8fea-44a4-a64f-b107877bd02a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.encyclopedia_item
+id: node.encyclopedia_item
+target_entity_type_id: node
+target_bundle: encyclopedia_item
+default_langcode: site_default
+language_alterable: false

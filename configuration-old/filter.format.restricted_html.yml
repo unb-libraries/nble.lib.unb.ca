@@ -1,0 +1,19 @@
+uuid: 99ac859f-9ab2-4df4-8ad3-f1e14f28e94a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AbmxU5tFSttMfaf8weG1sd-i46qtNJ_79lz1Ue49zI0
+name: 'Restricted HTML'
+format: restricted_html
+weight: -8
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <br>'
+      filter_html_help: true
+      filter_html_nofollow: false

@@ -13,11 +13,16 @@ use Drupal\Tests\BrowserTestBase;
 class LoadTest extends BrowserTestBase {
 
   /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stable9';
+
+  /**
    * Modules to enable.
    *
    * @var array
    */
-  public static $modules = ['nble_core'];
+  protected static $modules = ['nble_core'];
 
   /**
    * A user with permission to administer site configuration.
@@ -29,7 +34,7 @@ class LoadTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->user = $this->drupalCreateUser(['administer site configuration']);
     $this->drupalLogin($this->user);

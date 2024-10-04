@@ -1,0 +1,38 @@
+uuid: c3b63677-af65-4361-880b-0956cafe44a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.encyclopedia_item.body
+    - field.field.node.encyclopedia_item.field_glossary_section
+    - field.field.node.encyclopedia_item.field_image
+    - node.type.encyclopedia_item
+  module:
+    - text
+    - user
+id: node.encyclopedia_item.teaser
+targetEntityType: node
+bundle: encyclopedia_item
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_glossary_section: true
+  field_image: true
+  field_image_caption: true
+  field_listing_title: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: 601ccca6-1bba-46da-8684-146270addbf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+label: 'All content types'
+id: all_content_types
+description: ''
+matchers:
+  d38b1874-b28c-4be8-9cb0-5954656f50e4:
+    id: 'entity:node'
+    uuid: d38b1874-b28c-4be8-9cb0-5954656f50e4
+    settings:
+      metadata: ''
+      bundles: {  }
+      group_by_bundle: false
+      substitution_type: canonical
+      limit: 100
+      include_unpublished: false
+      result_description: ''
+    weight: 0

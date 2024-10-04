@@ -1,0 +1,28 @@
+uuid: 1d4d4a59-7414-4709-a259-115c0c37dc00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.encyclopedia_item
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - full_html
+id: node.encyclopedia_item.body
+field_name: body
+entity_type: node
+bundle: encyclopedia_item
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
