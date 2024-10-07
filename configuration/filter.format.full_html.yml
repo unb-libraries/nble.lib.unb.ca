@@ -5,6 +5,7 @@ dependencies:
   module:
     - editor
     - linkit
+    - media
 _core:
   default_config_hash: jnh1eKuJM-Ej3qFFEKflhjUa038I1hqGvaHNpTUatQw
 name: 'Full HTML'
@@ -35,7 +36,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p id class="text-align-left text-align-center text-align-right text-align-justify"> <h2 id class="text-align-left text-align-center text-align-right text-align-justify"> <h3 id class="text-align-left text-align-center text-align-right text-align-justify"> <h4 id class="text-align-left text-align-center text-align-right text-align-justify"> <h5 id class="text-align-left text-align-center text-align-right text-align-justify"> <h6 id class="text-align-left text-align-center text-align-right text-align-justify"> <cite> <dl class> <dt class> <dd class> <img src alt data-entity-type data-entity-uuid data-align data-caption class> <small class> <div id class> <span class> <blockquote cite> <ul type> <ol type start> <a hreflang id title href data-entity-type data-entity-uuid data-entity-substitution> <strong> <em> <u> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <u> <blockquote> <a href data-entity-type data-entity-uuid data-entity-substitution> <ul> <ol start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-caption data-align>'
       filter_html_help: true
       filter_html_nofollow: false
   linkit:
@@ -45,3 +46,12 @@ filters:
     weight: 0
     settings:
       title: true
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }

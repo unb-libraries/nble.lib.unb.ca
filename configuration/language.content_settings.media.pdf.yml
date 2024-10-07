@@ -1,0 +1,11 @@
+uuid: 5612fa6a-616c-4235-8e7f-3d6ea3b54bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.pdf
+id: media.pdf
+target_entity_type_id: media
+target_bundle: pdf
+default_langcode: site_default
+language_alterable: false

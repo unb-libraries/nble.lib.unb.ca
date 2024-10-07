@@ -7,6 +7,7 @@ dependencies:
     - filter.format.restricted_html
   module:
     - filter
+    - media
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -18,3 +19,4 @@ permissions:
   - 'access content'
   - 'use text format full_html'
   - 'use text format restricted_html'
+  - 'view media'
