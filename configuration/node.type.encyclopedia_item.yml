@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Encyclopedia Item'
 type: encyclopedia_item
 description: "Use <em>Encyclodpedia items</em> for content listed in the encyclopedia <em>Glossary</em>. Ex:  'Acadiensis' under the  'A'  section.\r\n"
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false
