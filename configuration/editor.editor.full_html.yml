@@ -22,7 +22,6 @@ settings:
       - numberedList
       - '|'
       - link
-      - drupalMedia
       - '|'
       - alignment
       - '|'
