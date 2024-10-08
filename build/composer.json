@@ -82,21 +82,6 @@
       "package": {
         "dist": {
           "type": "zip",
-          "url": "https://github.com/w8tcha/ckeditor-codemirror-plugin/archive/v1.17.12.zip"
-        },
-        "extra": {
-          "installer-name": "ckeditor_codemirror"
-        },
-        "name": "w8tcha/ckeditor-codemirror-plugin",
-        "type": "drupal-library",
-        "version": "1.17.12"
-      },
-      "type": "package"
-    },
-    {
-      "package": {
-        "dist": {
-          "type": "zip",
           "url": "https://github.com/markgoodyear/scrollup/archive/refs/heads/master.zip"
         },
         "extra": {
@@ -124,6 +109,7 @@
     "drupal/fontawesome": "^2",
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^2",
+    "drupal/imce": "^3",
     "drupal/jquery_scrollup": "^2",
     "drupal/key": "^1",
     "drupal/linkit": "^6",
@@ -140,8 +126,7 @@
     "drupal/twig_tweak": "^3",
     "markgoodyear/scrollup": "dev-master",
     "unb-libraries/composer-drupal-scaffold": "^10",
-    "unb-libraries/saml_features": "dev-10.x-1.x",
-    "w8tcha/ckeditor-codemirror-plugin": "^1.17.12"
+    "unb-libraries/saml_features": "dev-10.x-1.x"
   },
   "require-dev": {
     "unb-libraries/drupal-development-libraries": "^10"

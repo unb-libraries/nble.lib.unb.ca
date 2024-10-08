@@ -25,6 +25,7 @@ module:
   help: 0
   history: 0
   image: 0
+  imce: 0
   jquery_scrollup: 0
   language: 0
   link: 0

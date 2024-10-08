@@ -1,0 +1,27 @@
+uuid: b54d6b21-ea4f-463b-ad6c-6e6800d560d3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pRtugufdcuY7Mt1qFFUc2exdM7_YyYmpv_GNbYN31lA
+id: member
+label: 'Member profile'
+description: 'Configuration for site members'
+conf:
+  usertab: false
+  extensions: pdf
+  maxsize: 2.0
+  quota: 50.0
+  maxwidth: 1024
+  maxheight: 1024
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  url_alter: false
+  folders:
+    -
+      path: pdf
+      permissions:
+        browse_files: true
+        upload_files: true
