@@ -22,7 +22,7 @@ services:
       - nble.lib.unb.ca
     entrypoint:
       - docker-entrypoint-multiple.sh
-      - resources.nble-lib-unb-ca:/solr-conf
+      - resources.nble.lib.unb.ca:/solr-conf
     volumes:
       - solr-data:/opt/solr/server/solr/mycores
   drupal-redis-lib-unb-ca:
