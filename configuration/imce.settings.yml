@@ -5,3 +5,5 @@ admin_theme: true
 roles_profiles:
   authenticated:
     public: member
+  editor:
+    public: member

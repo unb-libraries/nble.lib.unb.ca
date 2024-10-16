@@ -21,7 +21,7 @@ conf:
   url_alter: false
   folders:
     -
-      path: pdf
+      path: inline-files
       permissions:
         browse_files: true
         upload_files: true

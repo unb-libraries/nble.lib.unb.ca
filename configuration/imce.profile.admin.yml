@@ -21,6 +21,7 @@ conf:
   url_alter: false
   folders:
     -
-      path: .
+      path: inline-files
       permissions:
-        all: true
+        browse_files: true
+        upload_files: true
