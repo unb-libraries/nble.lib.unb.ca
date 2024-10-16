@@ -1,7 +1,7 @@
 dockworker:
   version: '6'
   application:
-    name: The Peskotomuhkati-Wolastoqey Language Portal
+    name: The New Brunswick Literary Encyclopedia
     uri: https://nble.lib.unb.ca
     description: >
       The New Brunswick Literary Encyclopedia is an encyclopedia of biographical, critical,
@@ -21,8 +21,8 @@ dockworker:
       uuid: 3104
     framework:
       name: Drupal
-      version: 9
-      startup_finished_marker: '99_zz_notify_user_URI'
+      version: 10
+      startup_finished_marker: '99_startup_sequence_complete'
       endpoint:
         name: http
         port: 80
@@ -60,7 +60,7 @@ dockworker:
         - NBLE
     image:
       name: ghcr.io/unb-libraries/nble.lib.unb.ca
-      parent: ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
+      parent: ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
       repository: GitHub
       push-branches:
         - dev
