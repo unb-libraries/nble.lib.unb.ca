@@ -4227,16 +4227,16 @@
         },
         {
             "name": "onelogin/php-saml",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SAML-Toolkits/php-saml.git",
-                "reference": "d3b5172f137db2f412239432d77253ceaaa1e939"
+                "reference": "bf5efce9f2df5d489d05e78c27003a0fc8bc50f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SAML-Toolkits/php-saml/zipball/d3b5172f137db2f412239432d77253ceaaa1e939",
-                "reference": "d3b5172f137db2f412239432d77253ceaaa1e939",
+                "url": "https://api.github.com/repos/SAML-Toolkits/php-saml/zipball/bf5efce9f2df5d489d05e78c27003a0fc8bc50f0",
+                "reference": "bf5efce9f2df5d489d05e78c27003a0fc8bc50f0",
                 "shasum": ""
             },
             "require": {
@@ -4287,7 +4287,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-30T15:10:40+00:00"
+            "time": "2025-05-25T14:28:00+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -9795,16 +9795,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.3.8",
+            "version": "1.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "17bb121e35d90cc7d233b6f5adbcd569ae75d9c5"
+                "reference": "973a4e89e19ea7dbd60af0aa939b18a873cf7f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/17bb121e35d90cc7d233b6f5adbcd569ae75d9c5",
-                "reference": "17bb121e35d90cc7d233b6f5adbcd569ae75d9c5",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/973a4e89e19ea7dbd60af0aa939b18a873cf7f2f",
+                "reference": "973a4e89e19ea7dbd60af0aa939b18a873cf7f2f",
                 "shasum": ""
             },
             "require": {
@@ -9879,7 +9879,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.3.8"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.3.9"
             },
             "funding": [
                 {
@@ -9895,7 +9895,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-20T20:18:13+00:00"
+            "time": "2025-05-22T16:48:16+00:00"
         },
         {
             "name": "micheh/phpcs-gitlab",
@@ -14134,7 +14134,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
