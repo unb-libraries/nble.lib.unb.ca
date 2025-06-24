@@ -110,7 +110,7 @@
     "drupal/imce": "^3",
     "drupal/jquery_scrollup": "^2",
     "drupal/key": "^1",
-    "drupal/linkit": "^6",
+    "drupal/linkit": "^7",
     "drupal/login_destination": "^2",
     "drupal/noreqnewpass": "^1",
     "drupal/pathauto": "^1",
