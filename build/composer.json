@@ -27,7 +27,7 @@
     "sort-packages": true
   },
   "conflict": {
-    "drupal/ctools": "^4.0.0",
+    "drupal/ctools": "dev-4.1.x",
     "drupal/drupal": "*"
   },
   "description": "Drupal 11 component of nble.lib.unb.ca",
@@ -108,12 +108,12 @@
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
     "drupal/imce": "^3",
-    "drupal/jquery_scrollup": "^2",
+    "drupal/scrollup": "^3",
     "drupal/key": "^1",
     "drupal/linkit": "^7",
     "drupal/login_destination": "^2",
     "drupal/noreqnewpass": "^1",
-    "drupal/pathauto": "^1",
+    "drupal/pathauto": "^1.15",
     "drupal/redis": "^1",
     "drupal/samlauth": "^3",
     "drupal/search_api": "^1",
