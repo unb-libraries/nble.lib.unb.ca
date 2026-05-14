@@ -30,7 +30,7 @@
     "drupal/ctools": "^4.0.0",
     "drupal/drupal": "*"
   },
-  "description": "Drupal 8 component of nble.lib.unb.ca",
+  "description": "Drupal 11 component of nble.lib.unb.ca",
   "extra": {
     "enable-patching": true,
     "drupal-scaffold": {
@@ -98,9 +98,9 @@
     "drupal/allowed_formats": "^3",
     "drupal/bootstrap4": "^3",
     "drupal/config_update": "^2",
-    "drupal/core": "^10",
-    "drupal/core-composer-scaffold": "^10",
-    "drupal/core-recommended": "^10",
+    "drupal/core": "^11",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-recommended": "^11",
     "drupal/externalauth": "^2",
     "drupal/field_formatter_class": "^1",
     "drupal/field_group": "^3",
@@ -123,11 +123,11 @@
     "drupal/twig_field_value": "^2",
     "drupal/twig_tweak": "^3",
     "markgoodyear/scrollup": "dev-master",
-    "unb-libraries/composer-drupal-scaffold": "^10",
+    "unb-libraries/composer-drupal-scaffold": "^11",
     "unb-libraries/saml_features": "dev-10.x-1.x"
   },
   "require-dev": {
-    "unb-libraries/drupal-development-libraries": "^10"
+    "unb-libraries/drupal-development-libraries": "^11"
   },
   "type": "project"
 }
