@@ -1,0 +1,26 @@
+diff --git a/scrollup.module b/scrollup.module
+index d120a09..a5fbe23 100644
+--- a/scrollup.module
++++ b/scrollup.module
+@@ -28,7 +28,7 @@ function scrollup_help($route_name, RouteMatchInterface $route_match) {
+ function scrollup_preprocess_page(&$variables) {
+ 
+   $config = \Drupal::config('scrollup.settings');
+-  $theme_selected = $config->get('scrollup_themename');
++  $theme_selected = $config->get('scrollup_themename') ?? [];
+   $active_theme = \Drupal::service('theme.manager')
+     ->getActiveTheme()
+     ->getName();
+diff --git a/src/Form/ScrollupForm.php b/src/Form/ScrollupForm.php
+index 59fca59..7bdba14 100644
+--- a/src/Form/ScrollupForm.php
++++ b/src/Form/ScrollupForm.php
+@@ -84,7 +84,7 @@ class ScrollupForm extends ConfigFormBase {
+       '#title' => $this->t('Scrollup Button Title'),
+       '#description' => $this->t('scrollup button title'),
+       '#type' => 'textfield',
+-      '#default_value' => $this->t($config->get('scrollup_title')),
++      '#default_value' => $this->t($config->get('scrollup_title') ?? ''),
+     ];
+ 
+     $form['scrolling_fieldset']['scrollup_window_position'] = [

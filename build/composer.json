@@ -67,7 +67,11 @@
         "type:drupal-custom-theme"
       ]
     },
-    "patches": {}
+    "patches": {
+      "drupal/scrollup": {
+        "PHP 8.3 null config fixes": "/build/patches/scrollup_3.x_php_8.3.patch"
+      }
+    }
   },
   "license": "MIT",
   "minimum-stability": "dev",
@@ -108,7 +112,6 @@
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
     "drupal/imce": "^3",
-    "drupal/scrollup": "^3",
     "drupal/key": "^1",
     "drupal/linkit": "^7",
     "drupal/login_destination": "^2",
@@ -116,6 +119,7 @@
     "drupal/pathauto": "^1.15",
     "drupal/redis": "^1",
     "drupal/samlauth": "^3",
+    "drupal/scrollup": "^3",
     "drupal/search_api": "^1",
     "drupal/search_api_solr": "^4",
     "drupal/simple_sitemap": "^4",

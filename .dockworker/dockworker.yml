@@ -3,6 +3,9 @@ dockworker:
   drupal:
     schemas:
       ignore_enforcement:
+        - linkit.linkit_profile.all_content_types.*
+        - login_destination.destination.front_page_redirect
+        - search_api.server.*
   application:
     name: The New Brunswick Literary Encyclopedia
     uri: https://nble.lib.unb.ca
