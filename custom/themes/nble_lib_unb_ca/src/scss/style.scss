@@ -213,19 +213,19 @@ footer {
 // JS ScrollUp
 .scrollup {
   opacity: .75;
-  position: absolute;
+  position: fixed;
   right: 30px;
-  bottom: -54px;
+  bottom: 30px;
   float: right;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  background-image: url("../../../../../modules/contrib/scrollup/images/arrow.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
+  background-image: url("../../../../../modules/contrib/scrollup/images/arrow.png") !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  background-attachment: initial !important;
+  background-origin: initial !important;
+  background-clip: initial !important;
   height: 50px;
   width: 50px;
   border-radius: 100%;
