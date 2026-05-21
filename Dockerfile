@@ -2,7 +2,7 @@ FROM ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
 # Install additional OS packages.
-ENV ADDITIONAL_OS_PACKAGES postfix php-ldap php-xmlreader php-zip php83-pecl-redis
+ENV ADDITIONAL_OS_PACKAGES postfix php84-ldap php84-xmlreader php84-zip php84-pecl-redis
 ENV DRUPAL_SITE_ID nble
 ENV DRUPAL_SITE_URI nble.lib.unb.ca
 ENV DRUPAL_SITE_UUID f6af2f7e-d7a2-4dd7-a17b-e9c7a4ca4124
