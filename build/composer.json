@@ -70,6 +70,9 @@
     "patches": {
       "drupal/scrollup": {
         "PHP 8.3 null config fixes": "/build/patches/scrollup_3.x_php_8.3.patch"
+      },
+      "drupal/field_group": {
+        "PHP 8.4 nullable parameter deprecation (https://www.drupal.org/project/field_group/issues/3504453)": "https://www.drupal.org/files/issues/2025-04-14/3504453-field_group-MR-98--24.patch"
       }
     }
   },
